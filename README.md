@@ -17,7 +17,7 @@
 ## 编译
     npm run build
     
-##预览效果
+## 预览效果
 
 ![image](demo/1.png)
 ![image](demo/2.png)
