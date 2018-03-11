@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="/assets/bb7fcfb5/jquery.min.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.storageapi.min.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.blockUI.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.jsonp-2.4.0.min.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.base64.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/taskhelper.js?v409"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/touch-0.2.14.min_.js"></script>
+<title>个人中心</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<link href="/themes/default/skins/webapp/css/common.css?0612" type="text/css" rel="stylesheet">
+<script language="javascript">
+<!--
+$(function(){
+  
+//安装地址
+$.taskHelper.setInstallUrl("http://web.doudou.com/webapp/ddquwan/guide/goinstallhelper"); 
+/**
+ * 修改BlockUI默认样式 
+ */
+$.extend($.blockUI.defaults, {
+	fadeIn: 500,
+	overlayCSS: {
+		backgroundColor: '#000',
+		opacity: 0.7,
+		cursor: 'normal',
+	},
+	onOverlayClick: function (){
+		$.unblockUI();
+	},
+	css: {
+		width:'80%',
+		maxWidth: '330px',
+		padding: '15px 15px',
+		margin:'0 0 0 -45%',
+		textAlign: 'center',
+		backgroundColor: '#fff',	
+		cursor: 'normal',
+		left: '50%',
+		top: '50%',
+		border: '1px solid #e8e8e8'
+	}
+});
+});
+//-->
+</script>
+</head>
+
+<body>
+
+<!---最外边都要包一个pagewidth来限制页面最大宽度-->
+<div class="pagewidth">
+     <!--顶部导航-->
+	 <div class="header"> 
+   		 <a href="/webapp/ddquwan/dashboard/index" class="hd_back"><i></i></a>
+		 <h3>个人中心</h3>
+     </div>
+     <!--头部头像和二维码-->
+	 <div class="user_home_top">
+     	<dl>
+        	<a href="/webapp/ddquwan/user/profile">
+                            	<dt><img src="http://wx.qlogo.cn/mmopen/xPKCxELaaj5F4eicw5qDVicSicgwFTSetSibxzw9vfoJ5mibibBUQU9F4ed0mSKTa4GY07AaQF6llH36h7kLvCK240X8Acrs2ZGAqK/0" height="80" width="80"/></dt>
+                <dd>
+                	<p class="user_headname">hare</p>
+                    <p class="user_id">ID：10227397</p>
+                </dd>
+                            </a>
+        </dl>
+        <a target="_blank" href="/webapp/ddquwan/user/index/qrcode" class="QR_code">我的二维码</a>
+     </div>
+     
+     <!--收入明细和兑换明细-->
+     <div class="user_home_list">
+        <ul class="task_list_common">
+        	<li class="task_item_common">
+            	<a href="/webapp/ddquwan/user/income/record">
+                	<i class="user_home_icon1"></i>
+                    <h4>收入明细</h4>
+                    <p><span>财源来路  一目了然</span><i></i></p>
+                </a>
+                <div class="clear"></div>
+            </li>
+            <li class="task_item_common noborderbottom">
+            	<a href="/webapp/ddquwan/user/exchange/record">
+                	<i class="user_home_icon2"></i>
+                    <h4>兑换明细</h4>
+                    <p><span>多重兑现  方便快捷</span><i></i></p>
+                    <div class="clear"></div>
+                </a>   
+            </li>
+        </ul>
+        
+        <ul class="task_list_common">
+        	<li class="task_item_common">
+            	<a href="/webapp/ddquwan/help/aboutus">
+                	<i class="user_home_icon3"></i>
+                    <h4>关于我们</h4>
+                    <span><i></i></span>
+                    <div class="clear"></div>
+                </a>
+            </li>
+            <li class="task_item_common noborderbottom">
+            	<a href="/webapp/ddquwan/help/coop">
+                	<i class="user_home_icon4"></i>
+                    <h4>商务合作</h4>
+                    <span><i></i></span>
+                    <div class="clear"></div>
+                </a>
+            </li>
+        </ul>
+     </div>
+     
+</div>
+
+</body>
+</html>

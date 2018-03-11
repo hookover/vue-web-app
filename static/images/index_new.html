@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="/assets/bb7fcfb5/jquery.min.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.storageapi.min.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.blockUI.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.jsonp-2.4.0.min.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.base64.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/taskhelper.js?v409"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/touch-0.2.14.min_.js"></script>
+<title>豆豆趣玩-每日奖励</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<link href="/themes/default/skins/webapp/css/common.css?0629" type="text/css" rel="stylesheet">
+<script language="javascript">
+<!--
+$(function(){
+  
+//安装地址
+$.taskHelper.setInstallUrl("http://web.doudou.com/webapp/ddquwan/guide/goinstallhelper"); 
+/**
+ * 修改BlockUI默认样式 
+ */
+$.extend($.blockUI.defaults, {
+	fadeIn: 500,
+	overlayCSS: {
+		backgroundColor: '#000',
+		opacity: 0.7,
+		cursor: 'normal',
+	},
+	onOverlayClick: function (){
+		$.unblockUI();
+	},
+	css: {
+		width:'80%',
+		maxWidth: '330px',
+		padding: '15px 15px',
+		margin:'0 0 0 -45%',
+		textAlign: 'center',
+		backgroundColor: '#fff',	
+		cursor: 'normal',
+		left: '50%',
+		top: '50%',
+		border: '1px solid #e8e8e8'
+	}
+});
+});
+//-->
+</script>
+</head>
+
+<body>
+
+<!---最外边都要包一个pagewidth来限制页面最大宽度-->
+<div class="pagewidth daily_punch_card_box">
+    <!--顶部导航-->
+    <div class="header">
+        <a href="/webapp/ddquwan/dashboard/index" class="hd_back"><i></i></a>
+        <h3>每日打卡</h3>
+    </div>
+    <div class="daily_punch_card">
+        <img src="/themes/default/skins/webapp/images/daily_punch_card_img/daily_punch__box_bg.jpg">
+        <div class="daily_punch_card_canvas">
+            <div class="daily_punch_card_cold"></div>
+            <div class="daily_punch_card_status">
+                <!--此处有四中状态：1.未打卡的时候：class="daily_punch_day0"；2.第一天打卡后和第二天未打卡：class="daily_punch_day1"；3.第二天打卡后和第三天未打卡：class="daily_punch_day2"；3.第三天打卡后：class="daily_punch_day3"-->
+                                    <i class="daily_punch_day daily_punch_day1">
+                        <img src="/themes/default/skins/webapp/images/daily_punch_card_img/daily_punch_day1.jpg">
+                    </i>
+                
+
+                <!--是判断是否打卡的状态：1.未打卡状态:按钮的文字内容"今日打卡"、class="daily_punch_yellowbut"；2.已打卡状态：按钮的文字内容"今日已打卡"、class="daily_punch_graybut"-->
+                                    <a class="daily_punch_graybut"  href="javascript:void(0);">今日已打卡</a>
+                
+                                    <a class="daily_punch_graybut" href="javascript:void(0);">拆红包</a>
+                    <!--标签em里的数字，根据实际天数变化-->
+                    <span>已打卡<em>1</em>天 &nbsp; 距可领红包<em>2</em>天</span>
+                                <!--是判断是否拆红包状态:1.不能拆红包状态：按钮文字内容：拆红包、class="daily_punch_graybut"；2.可以拆红包状态：按钮文字内容：拆红包、class="daily_punch_redbut"；3.已经领完状态：按钮文字内容：已领取专属红包、class="daily_punch_graybut"-->
+
+
+            </div>
+        </div>
+    </div>
+    <div class="daily_punch_rules">
+        <h2>活动规则</h2>
+        <p>1、连续登陆豆豆打卡3天，就可领取打卡红包，金额随机;<br>2、红包直接入账豆豆余额，可查看收入明细;<br>3、可领红包当天24点前有效，未在规定时间内领取则红。</p>
+    </div>
+    <div class="daily_punch_bottom">※ 本活动最终解释权归豆豆趣玩所有 ※</div>
+
+    <!---弹出--今日打卡成功---->
+    <div class="remind_total daily_punch_ok_pop" style=" display:none">
+        <a class="pop_class"></a>
+        <p><i class="daily_punch_ok_icon"></i>今日打卡成功！</p>
+        <!---a标签中为动态广告，会根据活动变化图片---->
+        <a class="daily_punch_ok_pop_banner"  <a href="https://engine.tuia.cn/index/activity?appKey=2CJydL6Nrn3jGuMdJ7MPiKT19fV3&adslotId=1682">><img src="http://web.doudou.com/files/advert/material/appimg/2017-06/7ecc135705506c00a99f7988d7212cdd.jpg"></a>
+    </div>
+
+    <!---弹出-可领红包---->
+    <div class="remind_total daily_punch_pop_red" style="display: none">
+        <div class="daily_punch_pop_red_b">
+            <div class="daily_punch_pop_red_light"></div>
+            <div class="daily_punch_pop_red_top"></div>
+            <div class="daily_punch_pop_red_con"></div>
+            <div class="daily_punch_pop_red_text">豆豆趣玩送您1个<br />随机金额红包</div>
+            <div class="daily_punch_pop_red_buttom"><a></a></div></div>
+    </div>
+</div>
+<!---弹出-黑色涂层---->
+<div class="z_box" style="display:none;"></div>
+
+
+<script>
+    $(document).ready(function(){
+        /*打卡*/
+        $(".daily_punch_yellowbut").click(function(){
+            $.ajax({
+                url: "/webapp/ddquwan/everydayClock/submitClock",
+                'type': 'get',
+                'dataType': 'json',
+                'success': function (result){
+                    if(result.status ==1){
+                        $(".daily_punch_yellowbut").html('今日已打卡');
+                        $("#click").removeClass("daily_punch_yellowbut").addClass('daily_punch_graybut');
+                        $(".daily_punch_ok_pop,.z_box").show();
+                        $(".pop_class").click(function(){
+                            $(".daily_punch_ok_pop,.z_box").hide();
+                            window.location.reload();
+                        });
+
+                    }else{
+                        alert(result.message);
+                    }
+                },
+                'error': function (){
+                    // 提交审核失败
+                    alert("网络遇到问题，请稍候重试~");
+                }
+            });
+        });
+
+        /*拆红包*/
+        $(".daily_punch_redbut").click(function(){
+            $(".daily_punch_pop_red,.z_box").show();
+            $(".daily_punch_pop_red_buttom").click(function(){
+                $.ajax({
+                    url: "/webapp/ddquwan/everydayClock/hongBao",
+                    'type': 'get',
+                    'dataType': 'json',
+                    'success': function (result){
+                        if(result.status ==1){
+                            location.href="/webapp/ddquwan/everydayClock/hb?money="+result.message;
+                        }else{
+                            alert(result.message);
+                        }
+                    },
+                    'error': function (){
+                        // 提交审核失败
+                        alert("网络遇到问题，请稍候重试~");
+                    }
+                });
+            });
+        });
+
+
+    });
+</script>
+
+
+
+</body>
+</html>

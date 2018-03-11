@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="/assets/bb7fcfb5/jquery.min.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.storageapi.min.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.blockUI.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.jsonp-2.4.0.min.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.base64.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/taskhelper.js?v409"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/touch-0.2.14.min_.js"></script>
+<title>任务宽-邀请好友</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<link href="/themes/default/skins/webapp/css/common.css?0612" type="text/css" rel="stylesheet">
+<script language="javascript">
+<!--
+$(function(){
+  
+//安装地址
+$.taskHelper.setInstallUrl("http://web.doudou.com/webapp/ddquwan/guide/goinstallhelper"); 
+/**
+ * 修改BlockUI默认样式 
+ */
+$.extend($.blockUI.defaults, {
+	fadeIn: 500,
+	overlayCSS: {
+		backgroundColor: '#000',
+		opacity: 0.7,
+		cursor: 'normal',
+	},
+	onOverlayClick: function (){
+		$.unblockUI();
+	},
+	css: {
+		width:'80%',
+		maxWidth: '330px',
+		padding: '15px 15px',
+		margin:'0 0 0 -45%',
+		textAlign: 'center',
+		backgroundColor: '#fff',	
+		cursor: 'normal',
+		left: '50%',
+		top: '50%',
+		border: '1px solid #e8e8e8'
+	}
+});
+});
+//-->
+</script>
+</head>
+
+<body>
+
+<div class="pagewidth invitation_index_box">
+<!--顶部导航-->
+  	<div class="header"> <a href="javascript:history.go(-1);" class="hd_back"><i></i></a>
+    	<h3>邀请好友</h3>
+    	<a class="hd_right" href="/webapp/ddquwan/user/invite/record"><span>邀请记录</span><i class="info_renwu_ico info_invitation_ico"></i></a> 
+  	</div>
+    <!--“邀请好友”面板-->
+  	<div class="invitation_index">
+     	<div class="invitation_reward_red"> 
+     		<a class="invitation_rule_shuoming"><i></i>规则介绍</a>
+        	<span>每成功邀请1位好友即可获得收益</span>
+     		<h2><i>￥</i>2<span>+</span><em>50</em><i class="percent">%</i><b></b></h2>
+    	 </div>
+    	 <div class="invitation_addup"> 
+      	    <!--这个a标签表示整一行都是点击范围，点击之后进入邀请记录页面，如果么有邀请记录，就轻弹出“您还没有邀请好友，快去邀请吧！”-->
+      		<a href="/webapp/ddquwan/user/invite/record">
+         		<span>今日已成功邀请好友<em>0</em>名，合计奖励<i>0元</i></span> 
+         		<ul>
+          		  <li><em>0.00</em><span>累计好友奖励（元）</span></li>
+          	 	  <li class="invitation_addup_last"><em>0<i></i></em><span>好友数量（人）</span></li>
+        		</ul>
+     	    </a> 
+        </div>
+     	<div class="invitation_rule">
+        	<p >被邀请人完成前2个APP体验任务（IOS版）或答题任务（android版），您可获得每个任务1元，共2元；</p>
+			<p>第3个任务开始您可获得好友任务收入的50%提成，每位好友奖励30元封顶。</p>
+      	    <label>安卓好友记得填写我的邀请码：<em>S10227397</em></label>
+        </div>
+       	<div class="invitation_share">
+       		<ul>
+         	    <!--微信好友和QQ好友都是直接跳走，目前不开放朋友圈和QQ空间，会被封，二维码分享跳至二维码页面-->
+         		<li><a id="weixin_share" href="javascript:void(0)"><i class="weixin_share"></i><span>微信好友</span></a></li>
+         		<li><a id="qq_share" href="javascript:void(0)"><i class="qq_share"></i><span>QQ好友</span></a></li>
+        		<li><a target="_blank" href="/webapp/ddquwan/user/index/qrcode"><i class="card_share"></i><span>二维码分享</span></a></li>
+       		</ul>
+   	 	</div>
+  	 </div>
+<!---弹出--助手未在线---->
+	<div class="remind_total remind_total_tune" id="taskofflinePop" style="display:none" >
+  		<div class="remind_text" style="padding-bottom:10px;"> 
+  			<img src="/themes/default/skins/webapp/images/pop/task_pop_mobile_img.png" />
+    		<h5 style=" font-size:15px; color:#555;">未检测到助手在线，请打开助手</h5>
+    		<span style=" font-size:12px; color:#b5b5b5;">若重复提醒，请手动关闭再打开。</span> 
+        </div>
+ 		<div class="remind_foot">
+    		<input  class="remind_btn btn_one" id="openHelperBtn" name="sub" value="打开助手" type="button">
+    		<span>若助手闪退或已卸载，请<a href="javascript:void(0);" class="goInstallHelper">重新下载</a></span> 
+        </div>
+	</div>
+	
+	<!---弹出-邀请好友规则介绍---->
+   <div class="remind_total remind_total_wider" style="display:none" >
+   		<div class="invitation_rule_top">
+        	<i></i>
+  		</div>
+       	<div class="invitation_rule_content">
+        	<p class="invitation_rule_content1">如果您的好友做了15个任务，3~15个任务的收入是20元。您可获：</p>
+            <P class="invitation_rule_content2">2<em>+</em>20<i>×50%</i><em>=</em>12</P>
+    		<ul>
+      			<li><span>2<em>元</em></span><i>好友完成前2个任务奖励</i></li>
+      			<li><span>20<em>×50%元</em></span><i>第3个任务起好友任务提成</i></li>
+   			</ul>
+ 	 	</div>
+  		<div class="remind_foot" > 
+    	<!---我知道了按钮---->
+    		<input  class="remind_btn btn_one" id="iknow" name="sub" value="知道了" type="submit">
+  		</div>
+	</div>
+    <!---黑色浮层---->
+	<div class="z_box" style="display:none"></div>
+</div>
+<script type="text/javascript">
+// 显示打开助手的提示
+var _showTaskHelperOfflineTip=function (offline)
+{
+	if(typeof offline=='undefined' || offline==true){
+		$("#taskofflinePop,.z_box").show();
+	}else{
+		$("#taskofflinePop,.z_box").hide();
+	}
+}
+$(document).ready(function(){
+	$('.invitation_rule_shuoming').click(function(){
+		$('.remind_total_wider, .z_box').show();
+	});
+	$('#iknow').click(function(){
+		$('.remind_total_wider, .z_box').hide();
+	});
+	$('#weixin_share').click(function(){
+		var addr = "http%3A%2F%2Fwww.xddkj.com%2Fshare.html%3Fsf%3Dios%26sfrom%3Dios%26id%3D10227397";
+		var des = "百万现金招募试玩小伙伴，现加入即送5元现金奖励";
+		$.taskHelper.dispatchWeixin(addr, des, function (){
+			return;
+		}, function (){
+			_showTaskHelperOfflineTip();
+		});
+	});
+	$('#qq_share').click(function(){
+		var addr = "http%3A%2F%2Fwww.xddkj.com%2Fshare.html%3Fsf%3Dios%26sfrom%3Dios%26id%3D10227397";
+		var des = "百万现金招募试玩小伙伴，现加入即送5元现金奖励";
+		$.taskHelper.dispatchQq(addr, des, function (){
+			return;
+		}, function (){
+			_showTaskHelperOfflineTip();
+		});
+	});
+
+	// 打开助手的事件
+	$("#openHelperBtn").bind('click', function (){ $('#taskofflinePop,.z_box').hide();$.taskHelper.openHelper(); });
+	// 安装助手的事件
+	$(".goInstallHelper").bind('click', function (){ $.taskHelper.installHelper(); });
+});
+
+</script>
+</body>
+</html>

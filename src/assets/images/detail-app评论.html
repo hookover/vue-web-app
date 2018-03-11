@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="/assets/bb7fcfb5/jquery.min.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.storageapi.min.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.blockUI.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.jsonp-2.4.0.min.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.base64.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/taskhelper.js?v409"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/touch-0.2.14.min_.js"></script>
+<title>任务宽-AppStore五星好评任务详情</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<link href="/themes/default/skins/webapp/css/common.css?0612" type="text/css" rel="stylesheet">
+<script language="javascript">
+<!--
+$(function(){
+  
+//安装地址
+$.taskHelper.setInstallUrl("http://web.doudou.com/webapp/ddquwan/guide/goinstallhelper"); 
+/**
+ * 修改BlockUI默认样式 
+ */
+$.extend($.blockUI.defaults, {
+	fadeIn: 500,
+	overlayCSS: {
+		backgroundColor: '#000',
+		opacity: 0.7,
+		cursor: 'normal',
+	},
+	onOverlayClick: function (){
+		$.unblockUI();
+	},
+	css: {
+		width:'80%',
+		maxWidth: '330px',
+		padding: '15px 15px',
+		margin:'0 0 0 -45%',
+		textAlign: 'center',
+		backgroundColor: '#fff',	
+		cursor: 'normal',
+		left: '50%',
+		top: '50%',
+		border: '1px solid #e8e8e8'
+	}
+});
+});
+//-->
+</script>
+</head>
+
+<body>
+
+<!---最外边都要包一个pagewidth来限制页面最大宽度-->
+<div class="pagewidth comment_info_box">
+	<!--顶部导航-->
+	<div class="header">
+					<a href="javascript:void(0);" class="hd_back"><i></i></a>
+				<h3>五星好评任务</h3>
+		<a href="/webapp/ddquwan/task/comment/strategy" class="hd_introduction"><i></i>玩法介绍</a>
+	</div>
+	<!--“五星好评详情”面板-->
+	<div class="comment_info">
+		<!--"五星好评详情"第一部分-->
+		<div class="comment_info_top">
+			<img src="http://web.doudou.com/files/advert/material/appicons/2017-06/de900fb0f6bc5f46d8c978851041bb2f.jpg" />
+			<p><i></i>剩余时间59:57分</p>
+			<dl>
+				<dt>快3-专业竞彩利器</dt>
+				<dd class="money_prompt">+<em>1.00元</em></dd>
+			</dl>
+			<span>评论删除或APP卸载将无法获得奖励 </span>
+		</div>
+		<div class="comment_info_claim_box">
+			<div class="comment_info_claim">
+				<dl class="comment_rwbz">
+					<dt><i></i>任务步骤 <a href="#" class="comment_btn"><span></span>任务流程教学</a></dt>
+					<dd>1、点击开始任务直接下载，从此页面打开应用试玩 </br>2、五星好评应用并上传好评截图 </br>3、第二天打开该应用试玩3分钟，提交审核，两个工作日内人工审核发放奖励。</dd>
+				</dl>
+				<dl class="comment_plyq">
+					<dt><i></i>评论要求</dt>
+					<dd>五星好评，并将下列【评论标题】,【评论内容】复制至AppStroe评论页面中，再将评论页面截图上传至任务宽。</dd>
+				</dl>
+			</div>
+		</div>
+		<!--"五星好评详情"第二部分：评论内容-->
+		<div class="comment_info_content">
+			<div class="comment_title">
+				<h2><span>评论标题</span><a href="#" id="appCommentTemCopy1"><i></i>复制标题</a></h2>
+				<p id="commentCopy1">最好用的足彩软件</p>
+			</div>
+			<div class="comment_word">
+				<h2><span>评论内容</span><a href="#" id="appCommentTemCopy2"><i></i>复制内容</a></h2>
+				<p id="commentCopy2">非常好用的软件，方便多了，以前我都要跑店里，现在想什么时候玩就什么时候玩</p>
+			</div>
+			<span class="comment_content_remind">※ 务必按照任务提供的文案进行评论</span>
+		</div>
+		<!--"五星好评详情"第三部分：底部按钮-->
+		<div class="task_info_btn comment_info_bot">
+			<!---这里的按钮是上面的按钮，有三种情况，是相同的颜色，不同状态下显示的文字不一样---->
+			<!-- <a class="btn_orange">安装</a>-->
+
+	<!--						<a class="btn_orange" id="openApp" data-style="" data-package="" data-urllink="">打开应用</span></a>
+							<a class="btn_orange" id="staTask">开始任务</a>
+			-->			<!---这里的按钮是下面的按钮，有两种情况，文字是相同的，但是颜色不同，用class来区分，不可点击的时候class内加上btn_gray， 可点击的时候class内去掉btn_gray---->
+							<a class="btn_orange" id="staTask">开始任务</a>
+				<a class="btn_green btn_gray" id="click">上传好评截图</a>
+			
+		</div>
+	</div>
+
+
+
+
+
+
+	<!---弹出开始---玩法介绍弹出，有五个步骤，左右滑动显示---->
+	<div class="remind_total task_flow" style="display:none" >
+		<!---这里是顶部的关闭按钮---->
+		<div class="task_flow_del">
+			<a></a>
+		</div>
+		<div class="task_flow_box">
+			<!---这里是五个步骤：如果想出现当前步骤，需隐藏此步骤之前的步骤。用li标签的style="display:none"进行隐藏---->
+			<ul class="task_flow_slider" id="index_t">
+				<li><h3>步骤1</h3><p>分别复制评论的标题以及内容，会自动跳转至AppStore</p><img src="/themes/default/skins/webapp/images/star_comment_image/star_comment_pic_1.jpg"/></li>
+				<li style="display:none"><h3>步骤2</h3><p>点击【评论】，然后【撰写评论】</p><img src="/themes/default/skins/webapp/images/star_comment_image/star_comment_pic_2.jpg"/></li>
+				<li><h3>步骤3</h3><p>给予五星好评，粘贴标题和内容后，点击【发送】</p><img src="/themes/default/skins/webapp/images/star_comment_image/star_comment_pic_3.jpg"/></li>
+				<li><h3>步骤4</h3><p>成功发送评论后，再次点击【撰写评论】</p><img src="/themes/default/skins/webapp/images/star_comment_image/star_comment_pic_4.jpg"/></li>
+				<li><h3>步骤5</h3><p>双击手机" HOME键" 后截图，将截图上传至任务宽</p><img src="/themes/default/skins/webapp/images/star_comment_image/star_comment_pic_5.jpg"/></li>
+			</ul>
+		</div>
+		<ul class="task_flow_nav" id="index_n">
+			<!---这里是五个步骤的切换按钮，如果显示当前的步骤，则li标签class="select_nav"---->
+			<li class="select_nav"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+
+
+
+	<!----简单弹出固定模板01一个按钮:没开始任务就上传截图弹出提醒---->
+	<div class="remind_total" style="display:none" id="noUpload">
+		<div class="remind_total_top">
+			<h6>温馨提醒</h6>
+		</div>
+		<div class="remind_text">
+			<!---这里的弹出中间文字都固定使用这个模板---->
+			<span>请先安装【快3-专业竞彩利器】，试玩3分钟，五星好评后再上传截图</span>
+		</div>
+		<div class="remind_foot">
+			<!---这里的按钮统一用这种，有以下几种情况。与上面的文字相对应，这里所有的情况都只有一个按钮，方便看，就不归开div了---->
+			<input  class="remind_btn btn_one" name="sub" value="立即安装" type="submit">
+		</div>
+	</div>
+
+
+	<!--简单弹出固定模板02两个按钮——共1个：退出页面-放弃任务弹出页面---->
+	<div class="remind_total remind_special"  style="display:none">
+		<div class="remind_total_top">
+			<h6>温馨提醒</h6>
+		</div>
+		<div class="remind_text">
+			<!---这里的弹出中间文字都固定使用这个模板，列表页和详情页返回都用这段文字---->
+			<span>确定放弃正在进行中的任务？</span>
+			<span class="emphasis_remind">（放弃任务--则该任务默认失败）</span>
+		</div>
+		<!---第二种是详情页返回按钮情况---->
+		<div class="remind_foot">
+			<input class="remind_btn" name="dropTask" value="确定放弃" type="submit">
+			<input class="remind_btn btn_one" onclick="$('.remind_special,.z_box').hide();" value="继续任务" type="submit">
+		</div>
+	</div>
+
+
+
+	<!---弹出-任务须知---->
+	<div class="remind_total remind_know remind_total_wider" style="display:none"  >
+		<div class="remind_total_top">
+			<h6>任务须知</h6>
+		</div>
+		<div class="remind_text task_notes">
+			<ul>
+				<li><i class="task_notes_icon1"></i><span>请在<em>60分钟</em>内下载试玩APP应用，进行五星好评并上传截图</span></li>
+				<li><i class="task_notes_icon2"></i><span><em>第2天</em>打开应用试玩3分钟并提交审核，两个工作日内会由人工审核并发放奖励</span></li>
+				<li class="task_notes_tiptext">任务成功评判标准：评论被AppStore收录，任务即算成功。</li>
+			</ul>
+		</div>
+		<div class="remind_foot" >
+			<!---我知道了按钮---->
+			<input  class="remind_btn" name="sub" value="我知道了" type="submit">
+		</div>
+	</div>
+
+	<!---弹出--任务成功---->
+	<div class="remind_total remind_success" style="display:none">
+		<div class="remind_total_top">
+			<label>
+				<em></em>
+				<h6>恭喜您，成功完成任务</h6>
+			</label>
+		</div>
+		<div class="remind_text">
+			<h5>+1.00元</h5>
+			<span>奖励正在发放中…</span> </div>
+		<div class="remind_foot">
+			<input  class="remind_btn btn_one" onclick="location.href='/webapp/ddquwan/task/app'" name="sub" value="继续赚钱" type="button">
+		</div>
+	</div>
+
+	<!---弹出--任务失败---->
+	<div class="remind_total" id="fail" style="display:none">
+		<div class="remind_text" style="padding-bottom:10px;">
+			<img src="/themes/default/skins/webapp/images/pop/task_pop_fail_img.png" />
+			<h5>任务失败</h5>
+			<span>应用需首次下载，您之前安装过，无法获得奖励。</span>
+		</div>
+		<div class="remind_foot">
+			<input  class="remind_btn btn_one" name="sub" onclick="location.href='/webapp/ddquwan/task/app'" value="继续赚钱" type="button">
+		</div>
+	</div>
+
+	<!---弹出--助手未在线---->
+	<div class="remind_total remind_total_tune" id="taskofflinePop" style="display:none" >
+		<div class="remind_text" style="padding-bottom:10px;">
+			<img src="/themes/default/skins/webapp/images/pop/task_pop_mobile_img.png" />
+			<h5 style=" font-size:15px; color:#555;">未检测到助手在线，请打开助手</h5>
+			<span style=" font-size:12px; color:#b5b5b5;">若重复提醒，请手动关闭再打开。</span>
+		</div>
+		<div class="remind_foot">
+			<input  class="remind_btn btn_one" id="openHelperBtn" name="sub" value="打开助手" type="button">
+			<span>若助手闪退或已卸载，请<a href="javascript:void(0);" class="goInstallHelper">重新下载</a></span>
+		</div>
+	</div>
+
+	<!---弹出--助手升级---->
+	<div class="remind_total remind_total_tune" id="taskUpgradePop" style="display:none">
+		<!---这个关闭按钮看情况重要的更新强制升级，没有关闭按钮；不重要的更新加上关闭按钮---->
+		<a class="pop_close" href="javascript:$('#taskUpgradePop,.z_box').hide();"></a>
+		<div class="remind_text">
+			<img src="/themes/default/skins/webapp/images/pop/task_pop_up_img.png"/>
+			<h5>助手需升级才可正常使用</h5>
+		</div>
+		<div class="remind_foot">
+			<input  class="remind_btn btn_one goInstallHelper" name="sub" value="升级助手" type="button">
+			<span>直接链接appstore<a href="javascript:void(0);" class="goInstallHelper">升级助手</a></span>
+		</div>
+	</div>
+	<!---黑色浮层---->
+	<div class="z_box" style="display:none"></div>
+	<div class="z_box_guide" style="display:none;"></div>
+</div>
+<script type="text/javascript"><!--
+	var i=0;
+	$("#index_t").swipe({
+		swipe:function(event,direction, distance, duration, fingerCount) {
+			if(direction == 'left'){
+				if(i==4)return;
+				else i++;
+			}else{
+				if(i==0)return;
+				else i--;
+			}
+			$("#index_t>li").fadeOut(200);
+			$("#index_n>li").removeClass('select_nav');
+			$("#index_t li:eq("+i+")").fadeIn(200);
+			$("#index_n li:eq("+i+")").addClass('select_nav');
+		},
+	});
+	var _startprocess=false,_helperVerion="1.6";
+	// 检查助手是否开启
+	var _checkTaskHelperOnline=function ()
+	{
+		$.taskHelper.checkOnline(function (){
+			_showTaskHelperOfflineTip(false);
+			setTimeout(_checkTaskHelperOnline, 3000);
+		}, function (){
+			_showTaskHelperOfflineTip(true);
+			setTimeout(_checkTaskHelperOnline, 3000);
+		});
+	}
+	// 显示打开助手的提示
+	var _showTaskHelperOfflineTip=function (offline)
+	{
+		// 检测用户是否安装
+
+		if(typeof offline=='undefined' || offline==true){
+			$(".newguide_one,.z_box").hide();$("#taskofflinePop,.z_box_guide").show();
+
+		}else{
+			$("#taskofflinePop,.z_box_guide").hide();
+
+				// 已安装应用  弹出打开应用
+				
+			    var eventcp = 'eyJtIjoiZGRxdXdhbiIsInRyYWNraWQiOiI3YjlhYjA4MTE4YmJiOTc2IiwiaXRlbWlkIjoiMTU2MzEiLCJleHRyYXBhcmFtcyI6InByb2plY3RpZCUzRDExMTc3JTI2bWF0ZXJpYWxpZCUzRDE0NTE3JTI2c3BhY2VpZCUzRDEwMDAwMDAwJTI2d3hBcHBVc2VyaWQlM0QxMDIyNzM5NyUyNnBvaW50VXNlcmlkJTNEMTAyMjczOTciLCJ1cmxTY2hlbWVzIjpbIiJdLCJleGVjdXRhYmxlIjoidHQiLCJwYWNrYWdlTmFtZSI6ImNvbS5jcHpqbHFrMy5pb3MifQ%3D%3D';
+				$.taskHelper.dispatchInstalled(eventcp, function (calldata){
+				var _status = $.base64('decode', calldata.status, true);
+					console.log(_status);
+				if(_status==1){
+					$("#staTask").html('打开应用');
+					$("#click").removeClass("btn_green btn_gray").addClass('btn_green');
+				}else{
+					$("#staTask").html('开始任务');
+				}
+//					<a class="btn_green btn_gray" id="click">上传好评截图</a>
+//						<a class="btn_green" id="uploadbtn">上传好评截图</a>
+
+			}, function () {
+				//_showTaskHelperOfflineTip();
+			});
+			
+		}
+	}
+
+
+	window.addEventListener("beforeunload", function(event) {
+		//$('.remind_special,.z_box').show();
+	});
+
+	$(document).ready(function(){
+		setTimeout(_checkTaskHelperOnline, 500);
+		// 打开助手的事件
+		$("#newguide_one").bind('click', function (){ $.taskHelper.openHelper(); });
+		// 安装助手的事件
+		$(".goInstallHelper").bind('click', function (){ $.taskHelper.installHelper(); });
+
+
+		$("body").css("overflow", "hidden");
+		// 放弃任务
+		$(".hd_back").click(function(){
+			$('.remind_special,.z_box').show();
+			return false;
+		});
+		$("input[name='dropTask']").click(function(){
+			var _itemid = 15631;
+			var commentInfoId = 23940;
+			if ($.trim(commentInfoId) == '')
+				return false;
+			var _data={'itemid':_itemid, 'commentid':commentInfoId};
+
+			$.post('/webapp/ddquwan/task/comment/dtask', _data, function (msg) {
+				if (msg.status == 1) {
+					$('.remind_special,.z_box').hide();
+					window.location.href="/webapp/ddquwan/task/comment";
+
+				} else {
+					$.blockUI({message: data.message, timeout: 3000});
+				}
+			}, 'json');
+		});
+
+
+
+
+
+
+		//任务须知
+		$(".remind_total_wider,.z_box").show();
+		//任务须知点击我知道了关闭
+		$(".remind_btn").click(function(){
+			$('.remind_total_wider,.z_box').hide();
+		});
+
+		// 点击任务教学显示
+		$(".comment_btn").click(function () {
+			$('.task_flow,.z_box').show();
+			return false;
+		});
+		// 任务流程教学轮播
+		$('.task_flow_nav > li').click(function(){
+			var i = $(this).index();
+			$('.task_flow_slider li').hide();
+			$('.task_flow_slider li:eq('+i+')').show();
+			$('.task_flow_nav > li').removeClass('select_nav');
+			$(this).addClass('select_nav');
+		});
+		// 任务教学关闭
+		$(".task_flow_del").click(function(){
+			$('.task_flow,.z_box').hide();
+		});
+
+		// 点击还是灰色上传截图按钮
+		$(".btn_green.btn_gray").click(function(){
+
+			if($(this).hasClass('btn_gray')) {
+				$("#noUpload,.z_box").show();
+
+				$(".remind_btn.btn_one").click(function () {
+					var eventcp = 'eyJtIjoiZGRxdXdhbiIsInRyYWNraWQiOiI3YjlhYjA4MTE4YmJiOTc2IiwiaXRlbWlkIjoiMTU2MzEiLCJleHRyYXBhcmFtcyI6InByb2plY3RpZCUzRDExMTc3JTI2bWF0ZXJpYWxpZCUzRDE0NTE3JTI2c3BhY2VpZCUzRDEwMDAwMDAwJTI2d3hBcHBVc2VyaWQlM0QxMDIyNzM5NyUyNnBvaW50VXNlcmlkJTNEMTAyMjczOTciLCJ1cmxTY2hlbWVzIjpbIiJdLCJleGVjdXRhYmxlIjoidHQiLCJwYWNrYWdlTmFtZSI6ImNvbS5jcHpqbHFrMy5pb3MifQ%3D%3D';
+					var _package = 'com.cpzjlqk3.ios';
+					$.taskHelper.dispatchInstalled(eventcp, function (calldata) {
+						// 判断当前用户是否安装了该应用
+						var _status = $.base64('decode', calldata.status, true);
+						// 未安装应用
+						if (_status != 1) {
+							//window.location.reload();
+							$.taskHelper.openUrl("https://itunes.apple.com/cn/app/id1241606241?mt=8", function () {
+							}, function () {
+								_showTaskHelperOfflineTip();
+							});
+						} else {
+							//window.location.reload();
+							// 打开应用
+							$.taskHelper.openPackage(_package, function (){
+								// 显示好评攻略
+								$('.task_flow,.z_box').show();
+							},function (){
+								// 打开失败
+								_showTaskHelperOfflineTip();
+								//alert("亲爱的，请先打开任务助手。");
+								_startprocess=false;
+							});
+
+						}
+
+					}, function () {
+						// 打开失败
+						_showTaskHelperOfflineTip();
+					});
+				});
+
+			}else {
+
+
+				var eventcp = 'eyJtIjoiZGRxdXdhbiIsInRyYWNraWQiOiI3YjlhYjA4MTE4YmJiOTc2IiwiaXRlbWlkIjoiMTU2MzEiLCJleHRyYXBhcmFtcyI6InByb2plY3RpZCUzRDExMTc3JTI2bWF0ZXJpYWxpZCUzRDE0NTE3JTI2c3BhY2VpZCUzRDEwMDAwMDAwJTI2d3hBcHBVc2VyaWQlM0QxMDIyNzM5NyUyNnBvaW50VXNlcmlkJTNEMTAyMjczOTciLCJ1cmxTY2hlbWVzIjpbIiJdLCJleGVjdXRhYmxlIjoidHQiLCJwYWNrYWdlTmFtZSI6ImNvbS5jcHpqbHFrMy5pb3MifQ%3D%3D';
+				// 检测用户是否安装
+				$.taskHelper.dispatchInstalled(eventcp, function (calldata) {
+					// 判断当前用户是否安装了该应用
+					var _status = $.base64('decode', calldata.status, true);
+					// 未安装应用
+					if (_status != 1) {
+
+						alert("亲爱的，您尙未安装该应用。需安装应用，并在AppStore上对该应用五星好评才可上传截图~");
+						$.taskHelper.openUrl("https://itunes.apple.com/cn/app/id1241606241?mt=8", function () {
+						}, function () {
+							_showTaskHelperOfflineTip();
+						});
+					} else {
+						// 检测到用户已经安装了该应用跳转到截图页面
+						location.href="/webapp/ddquwan/task/comment/upload?itemid="+15631;
+					}
+
+				}, function () {
+					// 打开失败
+					_showTaskHelperOfflineTip();
+				});
+
+
+
+			}
+
+		});
+
+		// 打开助手的事件
+		$("#openHelperBtn").bind('click', function (){ $('#taskofflinePop,.z_box').hide();$.taskHelper.openHelper(); });
+		// 安装助手的事件
+		$(".goInstallHelper").bind('click', function (){ $.taskHelper.installHelper(); });
+
+
+
+		// 开始任务 占用模板 并且跳转appstore下载当前应用
+		$("#staTask").click(function () {
+			var eventcp = 'eyJtIjoiZGRxdXdhbiIsInRyYWNraWQiOiI3YjlhYjA4MTE4YmJiOTc2IiwiaXRlbWlkIjoiMTU2MzEiLCJleHRyYXBhcmFtcyI6InByb2plY3RpZCUzRDExMTc3JTI2bWF0ZXJpYWxpZCUzRDE0NTE3JTI2c3BhY2VpZCUzRDEwMDAwMDAwJTI2d3hBcHBVc2VyaWQlM0QxMDIyNzM5NyUyNnBvaW50VXNlcmlkJTNEMTAyMjczOTciLCJ1cmxTY2hlbWVzIjpbIiJdLCJleGVjdXRhYmxlIjoidHQiLCJwYWNrYWdlTmFtZSI6ImNvbS5jcHpqbHFrMy5pb3MifQ%3D%3D';
+			var _package = 'com.cpzjlqk3.ios';
+			$.taskHelper.dispatchInstalled(eventcp, function (calldata) {
+				// 判断当前用户是否安装了该应用
+				var _status = $.base64('decode', calldata.status, true);
+				// 未安装应用
+				if (_status != 1) {
+					//window.location.reload();
+					$.taskHelper.openUrl("https://itunes.apple.com/cn/app/id1241606241?mt=8", function () {
+					}, function () {
+						_showTaskHelperOfflineTip();
+					});
+				} else {
+					// 打开应用
+					$.taskHelper.openPackage(_package, function (){
+						// 显示好评攻略
+						$('.task_flow,.z_box').show();
+						//	<a class="btn_green btn_gray" id="click">上传好评截图</a>
+						$("#click").removeClass('btn_gray');
+						//window.location.reload();
+					},function (){
+						// 打开失败
+						_showTaskHelperOfflineTip();
+						//alert("亲爱的，请先打开任务助手。");
+						_startprocess=false;
+					});
+
+				}
+
+			}, function () {
+				// 打开失败
+				_showTaskHelperOfflineTip();
+			});
+		});
+
+
+		// 复制标题 直接跳转到指定的app 应用
+		function onWordCopyed1()
+		{
+			var _style = 1;
+			//跳转appstore
+			if(_style=="1")
+			{
+				$.taskHelper.openUrl("https://itunes.apple.com/cn/app/id1241606241?mt=8", function () {
+				}, function () {
+					_showTaskHelperOfflineTip();
+				});
+
+			}
+			return false;
+		}
+
+
+		// 复制内容则不刷新直接跳转到appstore
+		function onWordCopyed2()
+		{
+			var _style = 1;
+			//跳转appstore
+			if(_style=="1")
+			{
+				$.taskHelper.openPackage('com.apple.AppStore', function (){
+					_startprocess=1;
+				},function (){
+					// 打开失败
+					_showTaskHelperOfflineTip();
+				});
+
+			}
+			return false;
+		}
+
+		// 复制标题
+		$("#appCommentTemCopy1").click(function(){
+
+			var keyword = $('#commentCopy1').html();
+			//向助手发送
+			$.taskHelper.dispatchCopy(keyword, function (){
+				$.blockUI({message: "已复制【评论标题】，正在跳转到AppStore...", timeout: 2000});
+				setTimeout(onWordCopyed1, 2000);
+
+			}, function (){
+				_showTaskHelperOfflineTip();
+			});
+		});
+
+		// 复制内容
+		$("#appCommentTemCopy2").click(function(){
+
+			var keyword = $('#commentCopy2').html();
+			//向助手发送
+			$.taskHelper.dispatchCopy(keyword, function (){
+				$.blockUI({message: "已复制【评论内容】，正在跳转到AppStore...", timeout: 2000});
+				setTimeout(onWordCopyed2, 2000);
+
+			}, function (){
+				_showTaskHelperOfflineTip();
+			});
+		});
+
+
+
+
+		// 打开应用
+		$("#openApp").bind('click', function () {
+			var eventcp = 'eyJtIjoiZGRxdXdhbiIsInRyYWNraWQiOiI3YjlhYjA4MTE4YmJiOTc2IiwiaXRlbWlkIjoiMTU2MzEiLCJleHRyYXBhcmFtcyI6InByb2plY3RpZCUzRDExMTc3JTI2bWF0ZXJpYWxpZCUzRDE0NTE3JTI2c3BhY2VpZCUzRDEwMDAwMDAwJTI2d3hBcHBVc2VyaWQlM0QxMDIyNzM5NyUyNnBvaW50VXNlcmlkJTNEMTAyMjczOTciLCJ1cmxTY2hlbWVzIjpbIiJdLCJleGVjdXRhYmxlIjoidHQiLCJwYWNrYWdlTmFtZSI6ImNvbS5jcHpqbHFrMy5pb3MifQ%3D%3D';
+			var _package = $(this).attr("data-package");
+			$.taskHelper.dispatchInstalled(eventcp, function (calldata) {
+				// 判断当前用户是否安装了该应用
+				var _status = $.base64('decode', calldata.status, true);
+				// 未安装应用
+				if (_status != 1) {
+					alert("亲爱的，您尙未安装该应用。需安装应用，并在AppStore上对该应用五星好评才可上传截图~");
+					$.taskHelper.openUrl("https://itunes.apple.com/cn/app/id1241606241?mt=8", function () {
+					}, function () {
+						_showTaskHelperOfflineTip();
+					});
+				} else {
+					// 打开应用
+					$.taskHelper.openPackage(_package, function (){
+						// 显示好评攻略
+						$('.task_flow,.z_box').show();
+					},function (){
+						// 打开失败
+						_showTaskHelperOfflineTip();
+						//alert("亲爱的，请先打开任务助手。");
+						_startprocess=false;
+					});
+
+				}
+
+			}, function () {
+				// 打开失败
+				_showTaskHelperOfflineTip();
+			});
+		});
+
+		// 截图
+		$("#uploadbtn").bind('click', function () {
+			var eventcp = 'eyJtIjoiZGRxdXdhbiIsInRyYWNraWQiOiI3YjlhYjA4MTE4YmJiOTc2IiwiaXRlbWlkIjoiMTU2MzEiLCJleHRyYXBhcmFtcyI6InByb2plY3RpZCUzRDExMTc3JTI2bWF0ZXJpYWxpZCUzRDE0NTE3JTI2c3BhY2VpZCUzRDEwMDAwMDAwJTI2d3hBcHBVc2VyaWQlM0QxMDIyNzM5NyUyNnBvaW50VXNlcmlkJTNEMTAyMjczOTciLCJ1cmxTY2hlbWVzIjpbIiJdLCJleGVjdXRhYmxlIjoidHQiLCJwYWNrYWdlTmFtZSI6ImNvbS5jcHpqbHFrMy5pb3MifQ%3D%3D';
+			// 检测用户是否安装
+			$.taskHelper.dispatchInstalled(eventcp, function (calldata) {
+				// 判断当前用户是否安装了该应用
+				var _status = $.base64('decode', calldata.status, true);
+				// 未安装应用
+				if (_status != 1) {
+
+					alert("亲爱的，您尙未安装该应用。需安装应用，并在AppStore上对该应用五星好评才可上传截图~");
+					$.taskHelper.openUrl("https://itunes.apple.com/cn/app/id1241606241?mt=8", function () {
+					}, function () {
+					 	_showTaskHelperOfflineTip();
+					});
+				} else {
+					// 检测到用户已经安装了该应用跳转到截图页面
+					location.href="/webapp/ddquwan/task/comment/upload?itemid="+15631;
+				}
+
+			}, function () {
+				// 打开失败
+				_showTaskHelperOfflineTip();
+			});
+		});
+
+
+		setTimeout(_checkAppInstall, 5000);
+	});
+
+	//
+	--></script>
+
+</body>
+</html>

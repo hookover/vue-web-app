@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="/assets/bb7fcfb5/jquery.min.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.storageapi.min.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.blockUI.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.jsonp-2.4.0.min.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.base64.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/taskhelper.js?v409"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/touch-0.2.14.min_.js"></script>
+<title>任务宽-APP体验任务详情</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<link href="/themes/default/skins/webapp/css/common.css?0606" type="text/css" rel="stylesheet">
+<script language="javascript">
+<!--
+$(function(){
+  
+//安装地址
+$.taskHelper.setInstallUrl("http://web.doudou.com/webapp/ddquwan/guide/goinstallhelper"); 
+/**
+ * 修改BlockUI默认样式 
+ */
+$.extend($.blockUI.defaults, {
+	fadeIn: 500,
+	overlayCSS: {
+		backgroundColor: '#000',
+		opacity: 0.7,
+		cursor: 'normal',
+	},
+	onOverlayClick: function (){
+		$.unblockUI();
+	},
+	css: {
+		width:'80%',
+		maxWidth: '330px',
+		padding: '15px 15px',
+		margin:'0 0 0 -45%',
+		textAlign: 'center',
+		backgroundColor: '#fff',	
+		cursor: 'normal',
+		left: '50%',
+		top: '50%',
+		border: '1px solid #e8e8e8'
+	}
+});
+});
+//-->
+</script>
+</head>
+
+<body>
+
+<!---最外边都要包一个pagewidth来限制页面最大宽度-->
+<div class="pagewidth task_info_box">
+	<!--顶部导航-->
+	<div class="header"> 
+   		 <a href="javascript:void(0);" class="hd_back"><i></i></a>
+		 <h3>任务详情</h3>
+     </div>
+     <!--“任务详情”面板-->
+     <div class="task_info">
+       <div class="task_info_top">
+       <img src="http://web.doudou.com/files/advert/material/appicons/2017-01/1e04cf45ce6f6b0ce2239fa7ec90ce10.jpg" />
+       <dl>
+       <dt>华安期货</dt>
+       <dd>首次试用</dd>
+       <dd class="orange"><i></i>剩余时间<em>59:55</em>分</dd>
+       </dl>
+       <label><em>+</em>0.60元</label>
+       </div>
+       <div class="clear"></div>
+       <div class="task_info_introduce">
+       <h5>任务说明<a href="javascript:void(0)" onclick="$('.remind_know,.z_box').show();"><i></i>注意事项</a></h5>
+       <div class="task_info_introduce_con">
+       <p>1、点击复制关键词，自动跳转到AppStore；<br />
+2、在AppStore中粘贴关键词并搜索；<br />
+3、找到该图标（<b style="font-size:115%;color:#f00;">第5位</b>左右），<b style="font-size:115%;color:#f00;">首次</b>获取安装；<br />
+4、返回本页，点击打开应用，试用体验3分钟<br />
+5、点击提交审核，获取奖励</p>
+       <p></p></div>
+       </div>
+       <div class="task_info_btn">
+       <a id="asokwdCopyWrap" data-style="1" data-asowords="华安期货" data-urllink="" class="btn_orange">
+       复制关键词：<span id="asokwd">华安期货</span></a>
+       <a id="sub" data-eventcp="eyJtIjoiZGRxdXdhbiIsInRyYWNraWQiOiI3YTI0YWExZDEwYjRlYmYwIiwiaXRlbWlkIjoiMTUyMDgiLCJleHRyYXBhcmFtcyI6InByb2plY3RpZCUzRDEwOTUwJTI2bWF0ZXJpYWxpZCUzRDE0MDI5JTI2c3BhY2VpZCUzRDEwMDAwMDAwJTI2d3hBcHBVc2VyaWQlM0QxMDIyNzM5NyUyNnBvaW50VXNlcmlkJTNEMTAyMjczOTciLCJ1cmxTY2hlbWVzIjpbInd4MjRlMTJiZWY3ODYzMWE5MiIsImdyb3dpbmcuZjgyZDI5NTc2ZWRmODE0MyJdLCJleGVjdXRhYmxlIjoiQ0ZOaXUudGVtcF9jYXNlaW5zZW5zaXRpdmVfcmVuYW1lIiwicGFja2FnZU5hbWUiOiJjb20uY2ZuaXUuaW9zIn0%3D" data-package="com.cfniu.ios" class="btn_green">提交审核</a></div>
+     </div>
+     
+    <!---弹出开始---简单弹出固定模板01一个按钮——共有4个弹出---->
+  	<div class="remind_total" id="step_1" style="display:none" >
+    	<div class="remind_total_top">
+     		 <h6>温馨提醒</h6>
+    	</div>
+    	<div class="remind_text">
+    	    		<span>关键词已复制，请先安装应用</span>
+    	   		 </div>
+    	 <div class="remind_foot">
+    		<input class="remind_btn btn_one" name="sub" value="安装应用" id="insApp" type="button">
+    	</div>
+ 	</div>
+  	<div class="remind_total" id="step_2" style="display:none" >
+    	<div class="remind_total_top">
+     		 <h6>温馨提醒</h6>
+    	</div>
+    	<div class="remind_text">
+    		<span>打开应用，注册试玩3分钟，再【提交审核】，即可获得奖励</span>
+   		 </div>
+    	 <div class="remind_foot">
+    		<!---这里的按钮统一用这种，有以下几种情况。与上面的文字相对应，这里所有的情况都只有一个按钮，方便看，就不归开div了---->
+    		<input class="remind_btn btn_one" name="openApp" value="打开应用" id="openApp" type="button">
+    	</div>
+ 	</div>
+  	<div class="remind_total" id="step_3" style="display:none" >
+    	<div class="remind_total_top">
+     		 <h6>温馨提醒</h6>
+    	</div>
+    	<div class="remind_text">
+    		<span >请先注册试玩3分钟再【提交审核】</span>
+   		 </div>
+    	 <div class="remind_foot">
+    		<input class="remind_btn btn_one" name="openApp" value="继续试玩" type="button">
+    	</div>
+ 	</div>
+  
+   	<!--简单弹出固定模板02两个按钮——共1个弹出，与模板01的区别是多了一个remind_special,对应的css会改变---->
+	<div class="remind_total remind_special" style="display:none">
+  		<div class="remind_total_top">
+    		<h6>温馨提醒</h6>
+  		</div>
+  		<div class="remind_text"> 
+    		<!---这里的弹出中间文字都固定使用这个模板，列表页和详情页返回都用这段文字----> 
+    		<span>确定放弃正在进行中的任务？</span>
+ 	    </div>
+    	<!---第二种是详情页返回按钮情况---->
+    	<div class="remind_foot">
+    		<input class="remind_btn" name="dropTask" value="确定放弃" type="submit">
+    		<input class="remind_btn btn_one" onclick="$('.remind_special,.z_box').hide();" value="取消" type="submit">
+   		</div>
+   </div>
+   
+   <!---弹出-任务须知---->
+   <div class="remind_total remind_know" >
+       	<div class="remind_text">
+    		<ul>
+      			<li><i>1</i><span>任务必须是首次下载，才能获得奖励；</span></li>
+      			      			<li><i>2</i><span>必须复制关键词，在AppStore粘贴关键词，搜索下载试玩，任务才算有效；</span></li>
+      			<li><i>3</i><span>须注册的任务必须注册才可获得奖励；</span></li>
+     			<li><i>4</i><span>一个设备只允许一个账号。</span></li>
+     			   			</ul>
+ 	 	</div>
+  		<div class="remind_foot" > 
+    	<!---我知道了按钮---->
+    		<input  class="remind_btn" name="sub" onclick="$('.remind_know,.z_box').hide();" value="我知道了" type="button">
+  		</div>
+	</div>
+
+<!---弹出--任务成功---->
+	<div class="remind_total remind_success" style="display:none">
+  		<div class="remind_total_top">
+    		<label>
+    			<em></em>
+    			<h6>恭喜您，成功完成任务</h6>
+    		</label>
+  		</div>
+  		<div class="remind_text">
+    		<h5>+0.60元</h5>
+   			<span>奖励正在发放中…</span> </div>
+ 		<div class="remind_foot">
+    		<input  class="remind_btn btn_one" onclick="location.href='/webapp/ddquwan/task/app'" name="sub" value="继续赚钱" type="button">
+  		</div>
+	</div>
+
+<!---弹出--任务失败---->
+	<div class="remind_total" id="fail" style="display:none">
+  		<div class="remind_text" style="padding-bottom:10px;"> 
+  			<img src="/themes/default/skins/webapp/images/pop/task_pop_fail_img.png" />
+    		<h5>任务失败</h5>
+    		<span>应用需首次下载，您之前安装过，无法获得奖励。</span> 
+        </div>
+  		<div class="remind_foot">
+    		<input  class="remind_btn btn_one" name="sub" onclick="location.href='/webapp/ddquwan/task/app'" value="继续赚钱" type="button">
+  		</div>
+	</div>
+
+<!---弹出--助手未在线---->
+	<div class="remind_total remind_total_tune" id="taskofflinePop" style="display:none" >
+  		<div class="remind_text" style="padding-bottom:10px;"> 
+  			<img src="/themes/default/skins/webapp/images/pop/task_pop_mobile_img.png" />
+    		<h5 style=" font-size:15px; color:#555;">未检测到助手在线，请打开助手</h5>
+    		<span style=" font-size:12px; color:#b5b5b5;">若重复提醒，请手动关闭再打开。</span> 
+        </div>
+ 		<div class="remind_foot">
+    		<input  class="remind_btn btn_one" id="openHelperBtn" name="sub" value="打开助手" type="button">
+    		<span>若助手闪退或已卸载，请<a href="javascript:void(0);" class="goInstallHelper">重新下载</a></span> 
+        </div>
+	</div>
+
+<!---弹出--助手升级---->
+	<div class="remind_total remind_total_tune" id="taskUpgradePop" style="display:none"> 
+  		<!---这个关闭按钮看情况重要的更新强制升级，没有关闭按钮；不重要的更新加上关闭按钮----> 
+  			<a class="pop_close" href="javascript:$('#taskUpgradePop,.z_box').hide();"></a>
+  		<div class="remind_text"> 
+  			<img src="/themes/default/skins/webapp/images/pop/task_pop_up_img.png"/>
+   			 <h5>助手需升级才可正常使用</h5>
+  		</div>
+  		<div class="remind_foot">
+    		<input  class="remind_btn btn_one goInstallHelper" name="sub" value="升级助手" type="button">
+   			 <span>直接链接appstore<a href="javascript:void(0);" class="goInstallHelper">升级助手</a></span> 
+        </div>
+	</div>
+    <!---黑色浮层---->
+	<div class="z_box"></div>
+</div>
+<script type="text/javascript"><!--
+	
+	var _startprocess=0;
+		var _helperVerion="1.6";
+	// 检查助手是否开启
+	var _checkTaskHelperOnline=function ()
+	{
+		$.taskHelper.checkOnline(function (){
+			_showTaskHelperOfflineTip(false);
+			setTimeout(_checkTaskHelperOnline, 1000);
+		}, function (){
+			_showTaskHelperOfflineTip(true);
+			setTimeout(_checkTaskHelperOnline, 1000);
+		});
+	}
+	// 显示打开助手的提示
+	var _showTaskHelperOfflineTip=function (offline)
+	{
+		if(typeof offline=='undefined' || offline==true){
+			$(".newguide_one").hide();$("#taskofflinePop,.z_box").show();
+		}else{
+			$("#taskofflinePop,.z_box").hide();
+		}
+	}
+	// 检查app安装
+	var _checkAppInstall=function ()
+	{
+		if(_startprocess == 1){
+			// 检测用户是否安装
+			var eventcp=$("#sub").data('eventcp');
+			$.taskHelper.dispatchInstalled(eventcp, function (calldata){
+				var _status=$.base64('decode', calldata.status, true);
+				// 已安装应用  弹出打开应用
+				if(_status==1){
+					$('#step_2,.z_box').show();
+				}else{
+					setTimeout(_checkAppInstall, 2000);
+				}
+			},function (e){
+				_showTaskHelperOfflineTip();
+			});
+		}else{
+			setTimeout(_checkAppInstall, 2000);
+		}
+	}
+	// 拷贝关键词事件
+	function onWordCopyed()
+	{
+		$item = $("#asokwdCopyWrap");
+		//跳转appstore
+		if($item.data('style')=="1")
+		{
+			$.taskHelper.openPackage('com.apple.AppStore', function (){
+				_startprocess=1;
+			},function (){
+				// 打开失败
+				_showTaskHelperOfflineTip();
+			});
+
+		}else{
+			$.taskHelper.openUrl($item.data('urllink'), function (){
+				_startprocess = 1;
+			},function (){
+				_showTaskHelperOfflineTip();
+			});
+		}
+		return false;
+	}
+
+	window.addEventListener("beforeunload", function(event) {
+		$('.remind_special,.z_box').show();
+	});
+	
+	$(document).ready(function(){
+		$("body").css("overflow", "hidden");
+		$(".hd_back").click(function(){
+			$('.remind_special,.z_box').show();
+			return false;
+		});
+		$("input[name='dropTask']").click(function(){
+			$.post('/webapp/ddquwan/task/app/dtask',{itemid:15208},function(data){
+				if(data.status){
+					window.location.href="/webapp/ddquwan/task/app";
+				}else{
+					$.blockUI({message: data.message, timeout: 3000});
+				}
+			},'json');
+		});
+		
+		// 打开助手的事件
+		$("#openHelperBtn").bind('click', function (){ $('#taskofflinePop,.z_box').hide();$.taskHelper.openHelper(); });
+		// 安装助手的事件
+		$(".goInstallHelper").bind('click', function (){ $.taskHelper.installHelper(); });
+
+		$("#asokwdCopyWrap").click(function(){
+			//跳转appstore
+			if($(this).data('style')=="1"){
+				var keyword = $('#asokwd').html();
+				//向助手发送
+				$.taskHelper.dispatchCopy(keyword, function (){
+					$.blockUI({message: "复制成功，等待跳转AppStore...", timeout: 2000});
+					setTimeout(onWordCopyed, 2000);//onWordCopyed();
+				}, function (){
+					_showTaskHelperOfflineTip();
+				});
+			}else{
+				setTimeout(onWordCopyed, 1000);
+			}
+		});
+		$("#insApp").click(function(){
+			$('#step_1,.z_box').hide();
+			onWordCopyed();
+		});
+		var _package=$("#sub").data('package');
+		var eventcp=$("#sub").data('eventcp');
+		$("input[name=openApp]").bind('click', function(){
+			$('#step_2,#step_3,.z_box').hide();
+			_startprocess=2;
+			// open package
+			$.taskHelper.openPackage(_package, function (){
+				//异步请求
+				$.taskHelper.getDeviceData(function (calldata)
+				{
+					var data={"r": eventcp, "d":calldata.data, '__t':new Date().getTime()};
+					// 发送提交审核数据
+					$.ajax({
+						'url': '/webapp/data/event/a?m=ddquwan',
+						'data': data,
+						'type': 'post',
+						'dataType': 'json',
+						'success': function (result){
+							//_startprocess=2;
+						},
+						'error': function (){
+							$.blockUI({message: "网络遇到问题，请稍候重试~", timeout: 2000});
+						}
+					});
+
+				}, function (){
+					$.blockUI({message: "抱歉，任务助手掉线了，请关闭后重新打开~", timeout: 2000});
+				});
+			},function (){
+				_showTaskHelperOfflineTip();
+			});
+			return;
+		});
+		// 开始任务按钮点击
+		$("#sub").bind('click', function (){
+			var $item=$(this);
+			// 向助手发送安装检测事件
+			$.taskHelper.dispatchInstalled(eventcp, function (calldata){
+				var _status=$.base64('decode', calldata.status, true);
+				if(_status!=1){
+					if(_startprocess==0){
+						$.blockUI({message: "请先复制关键词~", timeout: 2000});
+						return false;
+					}
+					$('#step_1,.z_box').show();
+					return false;
+				}
+				setTimeout(function (){
+					// 实时检测当前已安装
+					// 获取设备信息
+					//异步请求提交审核
+					$.taskHelper.getDeviceData(function (calldata)
+					{
+						var data={"r": eventcp, "d":calldata.data, '__t':new Date().getTime()};
+						// 发送提交审核数据
+						$.ajax({
+							'url': '/webapp/data/event/sm?m=ddquwan',
+							'data': data,
+							'type': 'post',
+							'dataType': 'json',
+							'success': function (result){
+								//alert(result.status);
+								// 未安装
+								if(result.status=='2'){
+									$('#step_1,.z_box').show();
+									// 未启动
+								}else if(result.status=='3'){
+									$('#step_2,.z_box').show();
+									//setTimeout(function (){$("#openApp").trigger('click');}, 2000);
+									// 奖励发放中
+								}else if(result.status=='4'){
+									$('#step_3').find('span').html(result.message);
+									$('#step_3,.z_box').show();
+									//setTimeout(function (){$("#openApp").trigger('click');}, 2000);
+									// 奖励发放中
+								}else if(result.status=='5' || result.status=='7'){
+									$('.remind_success,.z_box').show();
+									// 成功之后设置cookie
+									$.cookie("status","1","{expires: 7}");
+									// 已发放成功
+								}else if(result.status=='6'){
+									$('.remind_success,.z_box').show();
+								}else{
+									$('#fail').find('span').html(result.message);
+									$('#fail,.z_box').show();
+								}
+
+							},
+							'error': function (){
+								$.blockUI({message: "网络遇到问题，请稍候重试~", timeout: 2000});
+							}
+						});
+
+					}, function (){
+						$.blockUI({message: "抱歉，任务助手掉线了，请关闭后重新打开~", timeout: 2000});
+					});
+				}, 2000);
+
+			},function (){
+				_showTaskHelperOfflineTip();
+			});
+			return false;
+		});
+		setTimeout(_checkAppInstall, 5000);
+	});
+
+	//
+--></script>
+
+</body>
+</html>

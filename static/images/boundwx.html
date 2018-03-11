@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="/assets/bb7fcfb5/jquery.min.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.storageapi.min.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.blockUI.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.jsonp-2.4.0.min.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.base64.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/taskhelper.js?v409"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/touch-0.2.14.min_.js"></script>
+<title>绑定公众号</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<link href="/themes/default/skins/webapp/css/common.css?0621" type="text/css" rel="stylesheet">
+<script language="javascript">
+<!--
+$(function(){
+  
+//安装地址
+$.taskHelper.setInstallUrl("http://web.doudou.com/webapp/ddquwan/guide/goinstallhelper"); 
+/**
+ * 修改BlockUI默认样式 
+ */
+$.extend($.blockUI.defaults, {
+	fadeIn: 500,
+	overlayCSS: {
+		backgroundColor: '#000',
+		opacity: 0.7,
+		cursor: 'normal',
+	},
+	onOverlayClick: function (){
+		$.unblockUI();
+	},
+	css: {
+		width:'80%',
+		maxWidth: '330px',
+		padding: '15px 15px',
+		margin:'0 0 0 -45%',
+		textAlign: 'center',
+		backgroundColor: '#fff',	
+		cursor: 'normal',
+		left: '50%',
+		top: '50%',
+		border: '1px solid #e8e8e8'
+	}
+});
+});
+//-->
+</script>
+</head>
+
+<body>
+
+<!---最外边都要包一个pagewidth来限制页面最大宽度-->
+<div class="pagewidth">
+	<!--顶部导航-->
+	<div class="header"> 
+   		 <a href="javascript:history.go(-1);" class="hd_back"><i></i></a>
+		 <h3>绑定公众号</h3>
+     </div>
+     
+     <!--头部图片-->
+     <div class="user_Bind_number_top"></div>
+ 
+     <!--步骤描述：快速关注和快速绑定-->
+     <div class="exchange_list">
+         <div class="user_Bind_number_list">
+            <dl>
+                <dt>快速关注</dt>
+                <dd>
+                    <span>1</span>
+                    <p>打开微信，点击【通讯录】-【添加朋友】- 查找 "豆豆趣玩" 并关注。 
+                    	<!--点击查看图解，跳出弹出框-->
+                        <a id="showTip" href="javascript:void(0)">查看图解</a>
+                    </p>    
+                </dd>
+            </dl>
+            <a class="but_yellow copy">点击复制：<text id="copy">豆豆趣玩</text></a>
+            <div class="clear"></div>
+         </div>	
+         <div class="user_Bind_number_list border_top">
+            <dl>
+                <dt>快速绑定</dt>
+                <dd>
+                    <span>2</span>
+                    <p>点击公众号底部【绑定账号】获取验证码，并把验证码输入下面输入框，点击绑定即可。  
+                    </p>    
+                </dd>
+            </dl>
+            <div class="input_common_box">
+            	<input name="请输入验证码" id="vercode" placeholder="请输入验证码" type="text" class="input_common">
+            </div>
+            <a href="javascript:void(0)" class="but_yellow" id="bound">绑定</a>
+         </div>	
+     </div>
+     <!---弹出-查看图解---->
+   <div class="remind_total remind_know remind_know_picture_two" style="display:none" >
+       	<div class="remind_text">
+    		<ul>
+      			<li><em class="user_bind_process01"></em><span>点击通讯录</span></li>
+      			<li><em class="user_bind_process02"></em><span>点击右上角“添加朋友”</span></li>
+      			<li><em class="user_bind_process03"></em><span>搜索”豆豆趣玩”并关注</span></li>
+   			</ul>
+ 	 	</div>
+  		<div class="remind_foot" > 
+    	<!---我知道了按钮---->
+    		<input  class="remind_btn" name="iknow" value="我知道了" type="button">
+  		</div>
+	</div>
+    
+     <!---弹出-绑定成功--返回个人信息绑定后页面-->
+    <div class="remind_total remind_bind_success" style="display:none" >
+    	<!---关闭按钮---->
+   		<a class="pop_close" href="/webapp/ddquwan/user/exchange"></a>
+   		<img src="/themes/default/skins/webapp/images/pop/remind_bind_success.png"/>
+	</div>
+    <!---黑色浮层---->
+	<div class="z_box" style="display:none"></div>
+</div>
+<script type="text/javascript">
+$('#bound').click(function(){
+	var code = $('#vercode').val();
+	if(code==''){
+		alert('亲，请先输入验证码哦~');
+		return false;
+	}
+	$.post('/webapp/ddquwan/user/exchange/boundwx',{code:code},function(data){
+		if(data.status===false){
+			alert(data.msg);
+		}else{
+			$('.remind_bind_success,.z_box').show();
+		}
+	},'json');
+	return false;
+});
+$('#showTip').click(function(){
+	$('.remind_know_picture_two,.z_box').show();
+});
+$('input[name=iknow]').click(function(){
+	$('.remind_know_picture_two,.z_box').hide();
+});
+$('.copy').click(function(){
+	var keyword = $('#copy').html();
+	//向助手发送
+	$.taskHelper.dispatchCopy(keyword, function (){
+		alert('复制成功！');
+	}, function (){
+		alert('豆豆小助手不在线，请长按复制关键词！');
+	});
+});
+//copyText("copy");
+function copyText(box){
+    $("."+box).bind("hold",
+        function() {
+            var doc = document,
+                text = doc.getElementById(box),
+                range,
+                selection;
+            if (doc.body.createTextRange) {
+                range = document.body.createTextRange();
+                range.moveToElementText(text);
+                range.select();
+            } else if (window.getSelection) {
+                selection = window.getSelection();
+                range = document.createRange();
+                range.selectNodeContents(text);
+                selection.removeAllRanges();
+                selection.addRange(range);
+            } else {
+                alert("浏览器不支持长按复制功能");
+            }
+        });
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="/assets/bb7fcfb5/jquery.min.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.storageapi.min.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.blockUI.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.jsonp-2.4.0.min.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.base64.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/taskhelper.js?v409"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/touch-0.2.14.min_.js"></script>
+<title>微信钱包提现</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<link href="/themes/default/skins/webapp/css/common.css?0629" type="text/css" rel="stylesheet">
+<script language="javascript">
+<!--
+$(function(){
+  
+//安装地址
+$.taskHelper.setInstallUrl("http://web.doudou.com/webapp/ddquwan/guide/goinstallhelper"); 
+/**
+ * 修改BlockUI默认样式 
+ */
+$.extend($.blockUI.defaults, {
+	fadeIn: 500,
+	overlayCSS: {
+		backgroundColor: '#000',
+		opacity: 0.7,
+		cursor: 'normal',
+	},
+	onOverlayClick: function (){
+		$.unblockUI();
+	},
+	css: {
+		width:'80%',
+		maxWidth: '330px',
+		padding: '15px 15px',
+		margin:'0 0 0 -45%',
+		textAlign: 'center',
+		backgroundColor: '#fff',	
+		cursor: 'normal',
+		left: '50%',
+		top: '50%',
+		border: '1px solid #e8e8e8'
+	}
+});
+});
+//-->
+</script>
+</head>
+
+<body>
+
+<!---最外边都要包一个pagewidth来限制页面最大宽度-->
+<div class="pagewidth exchange_rule_box">
+    <!--顶部导航-->
+    <div class="header">
+        <a href="http://web.doudou.com/webapp/ddquwan/dashboard/index" class="hd_back"><i></i></a>
+        <h3>激活10元提现特权</h3>
+    </div>
+    <div class="exchange_rule_item">
+        <img src="/themes/default/skins/webapp/images/exchange_rule/exchange_rule_top.jpg"/>
+    </div>
+    <!--这个可提现版块的div在未完成时不显示，只有完成了两个任务后才显示可提现这个版块-->
+        <div class="exchange_rule exchange_rule_text">
+        <img src="/themes/default/skins/webapp/images/exchange_rule/exchange_rule_text.png"  />
+        <div class="exchange_rule_plate">
+            <img src="/themes/default/skins/webapp/images/exchange_rule/exchange_rule_01.png"  />
+            <!--i标签分为两种，exchange_rule_finish_ico是已完成，exchange_rule_nofinish_ico是未完成-->
+                            <i class="exchange_rule_nofinish_ico"></i>
+                        <a href="/webapp/ddquwan/task/app">去做体验任务</a>
+        </div>
+        <div class="exchange_rule_plate">
+            <img src="/themes/default/skins/webapp/images/exchange_rule/exchange_rule_02.png"  />
+                            <i class="exchange_rule_nofinish_ico"></i>
+                        <a href="/webapp/ddquwan/user/invite">去邀请好友</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
