@@ -1,0 +1,612 @@
+<html><head>
+<script type="text/javascript" src="/assets/bb7fcfb5/jquery.min.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.storageapi.min.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.blockUI.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.jsonp-2.4.0.min.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.base64.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/taskhelper.js?v409"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/touch-0.2.14.min_.js"></script>
+<title>豆豆趣玩-APP体验任务</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<link href="/themes/default/skins/webapp/css/common.css?0610" type="text/css" rel="stylesheet">
+<script language="javascript">
+<!--
+$(function(){
+  
+//安装地址
+$.taskHelper.setInstallUrl("http://web.doudou.com/webapp/ddquwan/guide/goinstallhelper"); 
+/**
+ * 修改BlockUI默认样式 
+ */
+$.extend($.blockUI.defaults, {
+  fadeIn: 500,
+  overlayCSS: {
+    backgroundColor: '#000',
+    opacity: 0.7,
+    cursor: 'normal',
+  },
+  onOverlayClick: function (){
+    $.unblockUI();
+  },
+  css: {
+    width:'80%',
+    maxWidth: '330px',
+    padding: '15px 15px',
+    margin:'0 0 0 -45%',
+    textAlign: 'center',
+    backgroundColor: '#fff',  
+    cursor: 'normal',
+    left: '50%',
+    top: '50%',
+    border: '1px solid #e8e8e8'
+  }
+});
+});
+//-->
+</script>
+</head>
+
+<body style="overflow: hidden;">
+
+<!---最外边都要包一个pagewidth来限制页面最大宽度-->
+<div class="pagewidth task_list_box">
+    <div class="box_loading" style="display:none">
+      <div class="box_loading_text">
+        <i></i>
+        <span>正在抢任务...</span>
+      </div>
+      <div class="box_loading_bd"></div>
+    </div>
+  <!--顶部导航-->
+  <div class="header"> 
+       <a href="/webapp/ddquwan/dashboard/index" class="hd_back"><i></i></a>
+     <h3>APP体验任务</h3>
+       <a class="hd_right" href="javascript:void(0)"><span>任务流程</span><i class="info_renwu_ico"></i></a>
+     </div>
+     <!--二级导航-->
+     <div class="header_navbar">
+       <!--切换到哪个标签上，就在哪个A标签上加个“current”-->
+         <a class="current" href="javascript:void(0);"><span>全部任务</span></a>
+         <a class="noborderright" href="javascript:void(0);"><span>任务记录</span></a>
+        <div class="clear"></div>
+     </div>
+     <!--“全部任务”面板-->
+     <div class="task_list_all" style="display: block;">
+      <p class="task_control_panel">
+          <!--切换到哪个标签上，就在哪个A标签上加个“current” ，切换下边的UL列表-->
+          <a class="current" href="javascript:void(0);">正在进行</a>
+            <a href="javascript:void(0);">即将开始</a>
+        </p>
+        <ul class="task_list_common" id="task-item-list">
+                              <li class="task_item_common">
+              <a href="/webapp/ddquwan/user/invite" data-deviceitemstatus="999">
+                  <img class="task_item_logo" src="/themes/default/skins/webapp/images/task_image/task_invitation.png">
+                    <dl class="task_item_brief">
+                      <dt>邀请好友</dt>
+                        <dd>
+                          <p>不限量</p>
+                            <div class="clear"></div>
+                        </dd>
+                    </dl>
+                    <p class="task_state_normal">+2.00元</p>
+                </a>
+                <div class="clear"></div>
+            </li>
+                    <li class="task_item_common">
+                  <img class="task_item_logo" src="http://web.doudou.com/files/advert/material/appicons/2017-06/755fe78c570401ad64c3979c9508d228.jpg">
+                    <dl class="task_item_brief">
+                      <dt>日记</dt>
+                        <dd>
+                          <p>首次试用</p>
+                            <p>抢光啦！</p>
+                            <div class="clear"></div>
+                        </dd>
+                    </dl>
+                    <p class="task_state_sellout"></p>
+                <div class="clear"></div>
+            </li>
+                    <li class="task_item_common">
+                  <img class="task_item_logo" src="http://web.doudou.com/files/advert/material/appicons/2016-11/8a0da9f19b75b06f487f4c3143955500.jpg">
+                    <dl class="task_item_brief">
+                      <dt>最新网游</dt>
+                        <dd>
+                          <p>首次试玩</p>
+                            <p>抢光啦！</p>
+                            <div class="clear"></div>
+                        </dd>
+                    </dl>
+                    <p class="task_state_sellout"></p>
+                <div class="clear"></div>
+            </li>
+                    <li class="task_item_common">
+                  <img class="task_item_logo" src="http://web.doudou.com/files/advert/material/appicons/2016-11/e44173ae089c88754d4fe36cb602ddc1.jpg">
+                    <dl class="task_item_brief">
+                      <dt>三国龙将</dt>
+                        <dd>
+                          <p>首次试玩</p>
+                            <p>抢光啦！</p>
+                            <div class="clear"></div>
+                        </dd>
+                    </dl>
+                    <p class="task_state_sellout"></p>
+                <div class="clear"></div>
+            </li>
+                  </ul>
+        
+        <!--即将开始面板-->
+        <ul class="task_list_common task_list_start" style="display:none">
+                <li class="task_item_common" style="text-align:center">没有即将开始的任务！</li>        </ul>
+        
+     </div>
+      <!--“任务记录”面板(默认display:none;点最顶上选项卡切换才显示出来)-->
+     <div class="task_list_record" style="display: none;">
+              <h3 class="task_title_already">已完成任务</h3>
+      <!--这里面的UL内容和全部任务的列表一样-->
+      <ul class="task_list_common">
+                    <li class="task_item_common">
+                  <img class="task_item_logo" src="http://web.doudou.com/files/advert/material/appicons/2017-05/73e7e1df330ec8bc201beef70cf99b67.jpg">
+                    <dl class="task_item_brief">
+                      <dt>基金</dt>
+                        <dd>
+                          <p>首次注册</p>
+                            <div class="clear"></div>
+                        </dd>
+                    </dl>
+                    <p class="task_state_normal">已完成</p>                <div class="clear"></div>
+            </li>
+                    <li class="task_item_common">
+                  <img class="task_item_logo" src="http://web.doudou.com/files/advert/material/appicons/2017-01/b7433f1c2a3542d68ac5a1f4ed39a66c.jpg">
+                    <dl class="task_item_brief">
+                      <dt>九牛网</dt>
+                        <dd>
+                          <p>首次试用</p>
+                            <div class="clear"></div>
+                        </dd>
+                    </dl>
+                    <p class="task_state_normal">已完成</p>                <div class="clear"></div>
+            </li>
+                    <li class="task_item_common">
+                  <img class="task_item_logo" src="http://web.doudou.com/files/advert/material/appicons/2017-01/5a77cc5022d2ab9295e45a94c08adb4e.jpg">
+                    <dl class="task_item_brief">
+                      <dt>南京证券</dt>
+                        <dd>
+                          <p>首次试用</p>
+                            <div class="clear"></div>
+                        </dd>
+                    </dl>
+                    <p class="task_state_normal">已完成</p>                <div class="clear"></div>
+            </li>
+                    <li class="task_item_common">
+                  <img class="task_item_logo" src="http://web.doudou.com/files/advert/material/appicons/2017-01/1e04cf45ce6f6b0ce2239fa7ec90ce10.jpg">
+                    <dl class="task_item_brief">
+                      <dt>华安期货</dt>
+                        <dd>
+                          <p>首次试用</p>
+                            <div class="clear"></div>
+                        </dd>
+                    </dl>
+                    <p class="task_state_normal">已完成</p>                <div class="clear"></div>
+            </li>
+                    <li class="task_item_common">
+                  <img class="task_item_logo" src="http://web.doudou.com/files/advert/material/appicons/2017-04/23d4dfa750f394d47192c5adc9f60df3.jpg">
+                    <dl class="task_item_brief">
+                      <dt>微整形</dt>
+                        <dd>
+                          <p>首次试用</p>
+                            <div class="clear"></div>
+                        </dd>
+                    </dl>
+                    <p class="task_state_normal">已完成</p>                <div class="clear"></div>
+            </li>
+                    <li class="task_item_common">
+                  <img class="task_item_logo" src="http://web.doudou.com/files/advert/material/appicons/2017-04/869cd3692cab5e2a62037366b86f033d.jpg">
+                    <dl class="task_item_brief">
+                      <dt>红警4</dt>
+                        <dd>
+                          <p>首次试玩</p>
+                            <div class="clear"></div>
+                        </dd>
+                    </dl>
+                    <p class="task_state_normal">已完成</p>                <div class="clear"></div>
+            </li>
+                  </ul>
+                     </div>
+     
+ <!--简单弹出固定模板02两个按钮——放弃当前任务，与模板01的区别是多了一个remind_special,对应的css会改变，模板01在详情页---->
+    <div class="remind_total remind_special" style="display:none">
+      <div class="remind_total_top">
+       <h6>温馨提醒</h6>
+    </div>
+      <div class="remind_text"> 
+        <!---这里的弹出中间文字都固定使用这个模板，列表页和详情页返回都用这段文字----> 
+        <span>确定放弃正在进行中的任务？</span> 
+        </div>
+      <!---这里是两个按钮，有以下几种情况，与上面的文字相对应，方便看，把div归开，第一种是列表页按钮情况---->
+      <div class="remind_foot"><input type="hidden" value="0" id="gotoID">
+        <input class="remind_btn" name="dropTask" value="放弃" type="submit">
+        <input class="remind_btn btn_one" name="goonTask" value="继续任务" type="submit">
+    </div>
+  </div>
+
+<!---弹出-任务流程---->
+  <div class="remind_total remind_know" style="display:none;">
+      <div class="remind_text">
+        <ul>
+            <li><i class="task_process01"></i><span>接取任务复制关键字下载</span></li>
+          <li><i class="task_process02"></i><span>打开（注册）试玩应用一段时间</span></li>
+            <li><i class="task_process03"></i><span>提交审核领取奖励</span></li>
+        </ul>
+      </div>
+      <div class="remind_foot"> 
+      <!---我知道了按钮---->
+         <input class="remind_btn" onclick="$('.remind_know,.z_box').hide();" name="sub" value="我知道了" type="button">
+      </div>
+  </div>
+
+<!---弹出--助手未在线---->
+  <div class="remind_total remind_total_tune" id="taskofflinePop" style="display:none">
+      <div class="remind_text" style="padding-bottom:10px;"> 
+        <img src="/themes/default/skins/webapp/images/pop/task_pop_mobile_img.png">
+        <h5 style=" font-size:15px; color:#555;">未检测到助手在线，请打开助手</h5>
+        <span style=" font-size:12px; color:#b5b5b5;">若重复提醒，请手动关闭再打开。</span> 
+        </div>
+    <div class="remind_foot">
+        <input class="remind_btn btn_one" id="openHelperBtn" name="sub" value="打开助手" type="submit">
+        <span>若助手闪退或已卸载，请<a href="javascript:void(0);" class="goInstallHelper">重新下载</a></span> 
+        </div>
+  </div>
+
+<!---弹出--助手升级---->
+  <div class="remind_total remind_total_tune" id="taskUpgradePop" style="display:none"> 
+      <!---这个关闭按钮看情况重要的更新强制升级，没有关闭按钮；不重要的更新加上关闭按钮----> 
+        <a class="pop_close" href=""></a>
+      <div class="remind_text"> 
+        <img src="/themes/default/skins/webapp/images/pop/task_pop_up_img.png">
+         <h5>助手需升级才可正常使用</h5>
+      </div>
+      <div class="remind_foot">
+        <input class="remind_btn btn_one goInstallHelper" name="sub" value="升级助手" type="submit">
+         <span>直接链接appstore<a href="javascript:void(0);" class="goInstallHelper">升级助手</a></span> 
+        </div>
+  </div>
+
+
+    <!---弹出开始---简单弹出固定模板01一个按钮——共有4个弹出---->
+    <div class="remind_total" id="step_1" style="display:none">
+      <div class="remind_total_top">
+         <h6>温馨提醒</h6>
+      </div>
+      <div class="remind_text">
+        <span>请先安装后，再打开试玩</span>
+       </div>
+       <div class="remind_foot">
+        <input class="remind_btn btn_one" name="sub" value="安装应用" id="insApp" type="button">
+      </div>
+  </div>
+
+
+  <!---弹出--新手教程-第一步---->
+  <div class="newguide_one" style="display:none"> 
+      <ul class="task_list_common">
+          <li class="task_item_common nobottomborder">
+              <a href="/webapp/ddquwan/guide/installhelper">
+                  <img class="task_item_logo" src="/themes/default/skins/webapp/images/helper.png">
+                    <dl class="task_item_brief">
+                      <dt>豆豆广场舞</dt>
+                        <dd>
+                          <p>首次试玩</p>
+                            <div class="clear"></div>
+                        </dd>
+                    </dl>
+                    <p class="task_state_normal">+1.00元</p>
+                </a>
+                <div class="clear"></div>
+            </li>
+        </ul>
+      <img class="img_newguide_one" src="/themes/default/skins/webapp/images/new_guide/newguide_stepone.png">
+  </div>
+    <!---黑色浮层---->
+    <div class="z_box" style="display:none"></div>
+  <div class="z_box_guide" style="display:none;"></div>
+</div>
+
+<script type="text/javascript">
+  <!--
+  $('.hd_right').click(function(){
+    $('.remind_know,.z_box').show();
+  });
+  $('.task_control_panel > a').click(function(){
+    var i = $(this).index();
+    $('.task_list_all>ul').hide();    
+    $('.task_list_all ul:eq('+i+')').show();
+    $('.task_control_panel > a').removeClass('current');
+    $(this).addClass('current');
+  });
+  $('.header_navbar > a').click(function(){
+    var i = $(this).index();
+    if(i==0){
+      $('.task_control_panel > a').removeClass('current');
+      $('.task_control_panel a:eq(0)').addClass('current');
+      $('.task_list_all ul:eq(0)').show();
+      $('.task_list_all ul:eq(1)').hide();
+      $('.task_list_all').show();
+      $('.task_list_record').hide();
+    }else{
+      $('.task_list_all').hide();
+      $('.task_list_record').show();
+    }
+    $('.header_navbar > a').removeClass('current');
+    $(this).addClass('current');
+  });
+  
+  var _startprocess=false,_helperVerion="1.6";
+
+  // 检查助手是否开启
+  var _checkTaskHelperOnline=function ()
+  {
+    $.taskHelper.checkOnline(function (){
+      _showTaskHelperOfflineTip(false);
+      setTimeout(_checkTaskHelperOnline, 3000);
+    }, function (){
+      _showTaskHelperOfflineTip(true);
+      setTimeout(_checkTaskHelperOnline, 3000);
+    });
+  }
+  // 显示打开助手的提示
+  var _showTaskHelperOfflineTip=function (offline)
+  {
+    if(typeof offline=='undefined' || offline==true){
+      $(".newguide_one,.z_box").hide();$("#taskofflinePop,.z_box_guide").show();
+    }else{
+      $("#taskofflinePop,.z_box_guide").hide();
+    }
+  }
+
+  /**-------------------------------------------------------------------------*/
+  var doingId = 0;
+      // 每秒种检查一次
+  $(document).ready(function (){
+    // 新手第一个任务的引导
+    //本地开发 暂时关闭检测 von todo
+    setTimeout(_checkTaskHelperOnline, 500);
+    // 打开助手的事件
+    $("#openHelperBtn").bind('click', function (){ $.taskHelper.openHelper(); });
+    // 安装助手的事件
+    $(".goInstallHelper").bind('click', function (){ $.taskHelper.installHelper(); });
+
+    
+    $("body").css("overflow", "hidden");
+
+    // 点击任务列表里的任务
+    $("#task-item-list>li>a").bind("click", function(){
+      /**
+       * 返回数据
+       *  status:
+       *    0: 未知错误
+       *    1: 可以开始任务
+       *    2: 已经开始了
+       *    -1: 之前安装过
+       *    -2: 任务被抢光了, 限量
+       * @var unknown_type
+       */
+      var $item=$(this);
+      // 先检查任务状态是否可以开始
+      // data-status
+      var _deviceItemStatus=$item.data('deviceitemstatus'), _isRetention=$item.data('isretention');
+      
+      if(_deviceItemStatus == 999){
+        return ;
+      }else if(_deviceItemStatus=="-3")// 不能开始任务[定向或者之前已安装过]
+      {
+        $.blockUI({message: "任务开始失败，请刷新重试!", timeout: 3000});
+        return false;
+      }
+      var _itemId=$item.data('itemid');
+      if(doingId && (_itemId!=doingId)){
+        
+        $('#gotoID').val(_itemId);
+        $('.remind_special,.z_box').show();
+        return false;
+      }else{
+        // 开始任务
+        //$("#startTaskBtn").bind('click', function (){
+
+          //var $startTaskBtn=$(this),itemid=$(this).data('itemid'),$item=$("#task-item-"+itemid);
+          if(_startprocess==true){
+            //alert('running');
+            return ;
+          }
+          _startprocess=true;
+          
+          // 处理留存任务
+          var _processRetention=function ()
+          {
+            var eventcp=$item.data('eventcp');
+            $.taskHelper.dispatchInstalled(eventcp, function (calldata){
+              var _status=$.base64('decode', calldata.status, true);
+              if(_status!=1){
+                $('#step_1,.z_box').show();
+                $("#insApp").unbind('click').bind('click', function (){
+                  window.location.href=$item.data('itunesurl');
+                  setTimeout(function (){$('#step_1,.z_box').show();}, 1000);
+                });
+                _startprocess=false
+                return false;
+              }
+              // 打开应用 
+              setTimeout(function (){
+              var _package=$item.data('package');
+              $.taskHelper.openPackage(_package, function (){
+                //异步请求
+                setTimeout(function (){
+                  $.taskHelper.getDeviceData(function (calldata)
+                  {
+                    var data={"r": eventcp, "d":calldata.data, '__t':new Date().getTime()};
+                    $.ajax({
+                      'url': '/webapp/data/event/a?m=ddquwan',
+                      'data': data,
+                      'type': 'post',
+                      'dataType': 'json',
+                      'success': function (result){
+                        //_startprocess=2;
+                        _startprocess=false;
+                      },
+                      'error': function (){
+                        $.blockUI({message: "网络遇到问题，请稍候重试~", timeout: 2000});
+                        _startprocess=false;
+                      }
+                    });
+          
+                  }, function (){
+                    $.blockUI({message: "抱歉，任务助手掉线了，请关闭后重新打开~", timeout: 2000});
+                    _startprocess=false;
+                  });
+                }, 500);
+              }, function (){
+                _showTaskHelperOfflineTip();
+                _startprocess=false;
+              }); 
+              }, 500);
+                
+            }, function (){
+              _showTaskHelperOfflineTip();
+              _startprocess=false;
+            });
+          }
+          
+          // 进行中的任务--跳转到任务详情页
+          if($item.data('deviceitemdoing')==1){
+            
+            if(_isRetention){
+              _processRetention();
+            }else {
+              _startprocess=false;
+              location.href="/webapp/ddquwan/task/app/detail?itemid="+_itemId;
+            }
+            
+            return false;
+          }
+
+          // 获取设备信息,开始任务
+          var pstr = $item.find(".task_state_normal").html();
+          $item.find(".task_state_normal").html("开始中...");
+          $('.box_loading').show();//loading
+          $.taskHelper.getDeviceData(function (calldata)
+          {
+            var _devicedataString=$.base64('decode', calldata.data, true);
+            var devicedata=JSON.parse(_devicedataString);
+            var osversion = parseInt(devicedata.os_version);
+            // 系统版本太低 
+            if(osversion<7)
+            {
+              _startprocess=false;
+              $.blockUI({message: "啊噢，您的手机系统版本过低，请升级后体验!", timeout: 3000});
+              return ;
+            }
+            // 检查助手版本
+            if(devicedata.app_version<_helperVerion)
+            {
+              $("#taskUpgradePop,.z_box").show();
+              return false;
+            }
+            
+            
+            var eventcp=$item.data('eventcp');
+            var data={"r": eventcp, "d":calldata.data, '__t':new Date().getTime()};
+
+            // 向助手发送点击事件
+            $.taskHelper.dispatchEventC(eventcp, function (){
+              // 发送点击请求数据
+              $.ajax({
+                'url': '/webapp/data/event/c?m=ddquwan',
+                'data': data,
+                'type': 'post',
+                'dataType': 'json',
+                'success': function (result){
+                  if(result.status==1)
+                  {
+                    $('.box_loading').hide();//loading消失
+                    
+                    if(_isRetention){
+                      $item.find(".task_state_normal").html("试玩5分钟");
+                      $.blockUI({message: "任务已抢到，请按要求打开试玩5分钟。", timeout: 3000});
+                      _processRetention();
+                    }else{
+                      if(result.clientUrl && result.clientUrl!='')
+                      {
+                        var img = new Image();
+                        var rnd_id = "_img_" + Math.random();
+                        window[rnd_id] = img; // 全局变量引用
+                        img.onload = img.onerror = function () {
+                        }
+                        img.src=result.clientUrl;
+                      }
+                      $.blockUI({message: "任务已抢到，请在1小时内按要求完成任务。", timeout: 3000});
+                      $item.find(".task_state_normal").html("进行中...");
+                      //跳转到任务详情页
+                      setTimeout(function(){location.href="/webapp/ddquwan/task/app/detail?itemid="+_itemId;}, 3000);
+                      _startprocess=false;
+                    }
+                    return false;
+                    
+                  }else {
+                    $item.find(".task_state_normal").html(pstr);
+                    $.blockUI({message: result.message=='' ? "抢任务的小伙伴太多了~请稍后重试[1]!":result.message, timeout: 3000});
+                    setTimeout(function(){location.reload();}, 3000);
+                    _startprocess=false;
+                  }
+
+                },
+                'error': function (){
+                  $('.box_loading').hide();//loading消失
+                  $item.find(".task_state_normal").html(pstr);
+                  $.blockUI({message: "抢任务的小伙伴太多了~请稍后重试[2]!", timeout: 3000});
+                  _startprocess=false;
+                }
+              });
+            }, function (){
+              $('.box_loading').hide();//loading消失
+              $item.find(".task_state_normal").html(pstr);
+              _showTaskHelperOfflineTip();
+              _startprocess=false;
+            });
+          }, function (){
+            $('.box_loading').hide();//loading消失
+            $item.find(".task_state_normal").html(pstr);
+            _showTaskHelperOfflineTip();
+            _startprocess=false;
+          });
+        //});
+      }
+      
+      
+      return false;
+    });
+
+    $("input[name='dropTask']").click(function(){
+      $.post('/webapp/ddquwan/task/app/dtask',{itemid:doingId},function(data){
+        if(data.status){
+          window.location.reload();
+        }else{
+          $.blockUI({message: data.message, timeout: 3000});
+        }
+      },'json');
+    });
+
+    $("input[name='goonTask']").click(function(){
+      $('.remind_special,.z_box').hide();
+      $("#task-item-"+doingId).find("a").trigger('click');
+      //location.href="/webapp/ddquwan/task/app/detail?itemid="+doingId;
+    });
+  });
+
+  //-->
+</script>
+
+
+
+
+</body></html>

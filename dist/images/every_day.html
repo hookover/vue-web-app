@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="/assets/bb7fcfb5/jquery.min.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.storageapi.min.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.blockUI.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.jsonp-2.4.0.min.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.base64.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/taskhelper.js?v409"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/touch-0.2.14.min_.js"></script>
+<title>豆豆趣玩-每日奖励</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<link href="/themes/default/skins/webapp/css/common.css?0629" type="text/css" rel="stylesheet">
+<script language="javascript">
+<!--
+$(function(){
+  
+//安装地址
+$.taskHelper.setInstallUrl("http://web.doudou.com/webapp/ddquwan/guide/goinstallhelper"); 
+/**
+ * 修改BlockUI默认样式 
+ */
+$.extend($.blockUI.defaults, {
+	fadeIn: 500,
+	overlayCSS: {
+		backgroundColor: '#000',
+		opacity: 0.7,
+		cursor: 'normal',
+	},
+	onOverlayClick: function (){
+		$.unblockUI();
+	},
+	css: {
+		width:'80%',
+		maxWidth: '330px',
+		padding: '15px 15px',
+		margin:'0 0 0 -45%',
+		textAlign: 'center',
+		backgroundColor: '#fff',	
+		cursor: 'normal',
+		left: '50%',
+		top: '50%',
+		border: '1px solid #e8e8e8'
+	}
+});
+});
+//-->
+</script>
+</head>
+
+<body>
+
+<!---最外边都要包一个pagewidth来限制页面最大宽度-->
+<div class="pagewidth invitation_detail_box">
+    <!--顶部导航-->
+    <div class="header">
+        <a href="/webapp/ddquwan/dashboard/index" class="hd_back"><i></i></a>
+        <h3>每日任务</h3>
+    </div>
+
+    <div class="daily_reward_canvas" >
+        <h2>每日奖励<span>每日0点刷新任务</span></h2>
+        <ul>
+            <!--i标签有4中类别：1、邀请好友类：class="day_task_invite";2、app体验类：class="day_task_app"；3、游戏体验类：class="day_task_game";4、指定任务（指单个app任务，包含截图、游戏、体验任务）：class="day_task_our"-->
+                                                            <li>
+                    <i class="day_task_invite"></i>
+                    <p><em>+ 0.10元</em></br>完成1个邀请任务<b>(0/1)</b></p>
+                                            <a href="/webapp/ddquwan/user/invite"><span class="daily_unfinish">去完成</span></a>
+                    
+                </li>
+                
+                
+                
+                                                             
+                                    <li>
+                        <i class="day_task_app"></i>
+                        <p><em>+ 0.15元</em></br>完成2个app体验任务<b>(0/2)</b></p>
+                                                    <a href="/webapp/ddquwan/task/app"><span class="daily_unfinish">去完成</span></a>
+                                            </li>
+                
+                
+                                                             
+                
+                                        <li>
+                            <i class="day_task_game"></i>
+                            <p><em>+ 0.20元</em></br>完成1个游戏任务<b>(0/1)</b></p>
+                                                            <a href="/webapp/ddquwan/task/game"><span class="daily_unfinish">去完成</span></a>
+                                                    </li>
+                
+                             
+        </ul>
+    </div>
+
+    <!-- data_everyday_reward 新手任务id 1,2,3 -->
+                <div class="daily_reward_canvas" >
+        <h2>新手专属奖励</h2>
+        <ul>
+            <li>
+                <i class="day_task_app"></i>
+                <p><em>+ 0.20元</em></br>完成1个app体验任务<b>(0/1)</b></p>
+                                                    <a href="/webapp/ddquwan/task/app"><span class="daily_unfinish">去完成</span></a>
+                            </li>
+            <li>
+                                <i class="day_task_game"></i>
+                <p><em>+ 0.20元</em></br>完成1个游戏任务<b>(0/1)</b></p>
+
+                                    <a href="/webapp/ddquwan/task/game"><span class="daily_unfinish">去完成</span></a>
+                            </li>
+
+
+                        <li class="noborderbottom">
+                <i class="day_task_invite"></i>
+                <p><em>+ 0.20元</em></br>完成2个邀请好友<b>(0/2)</b></p>
+                                    <a href="/webapp/ddquwan/user/invite"><span class="daily_unfinish">去完成</span></a>
+                            </li>
+        </ul>
+    </div>
+    </div>
+
+
+<script type="application/javascript">
+    $(document).ready(function(){
+        $(".finish").click(function(){
+            var $item=$(this);
+            var rewardId=$item.data('id');
+            var reward=$item.data('reward');
+            var value=$item.data('value');
+
+            if(rewardId == undefined && reward == undefined && value == undefined)
+            {
+                alert('数据错误，请联系客服~');
+                return false;
+            }
+            var data={"rewardId":rewardId,"reward":reward,"value":value};
+            $.ajax({
+                url: "/webapp/ddquwan/everydayReward/submitReward",
+                'data': data,
+                'type': 'get',
+                'dataType': 'json',
+                'success': function (result){
+                    if(result.status ==1){
+                        //alert('领取成功~');
+                        window.location.reload();
+                    }else{
+                        alert(result.message);
+                    }
+                },
+                'error': function (){
+                    // 提交审核失败
+                    alert("网络遇到问题，请稍候重试~");
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+</html>

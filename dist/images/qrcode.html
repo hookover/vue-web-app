@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="/assets/bb7fcfb5/jquery.min.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.storageapi.min.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.blockUI.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.jsonp-2.4.0.min.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.base64.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/taskhelper.js?v409"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/touch-0.2.14.min_.js"></script>
+<title>邀请二维码</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<link href="/themes/default/skins/webapp/css/common.css?0612" type="text/css" rel="stylesheet">
+<script language="javascript">
+<!--
+$(function(){
+  
+//安装地址
+$.taskHelper.setInstallUrl("http://web.doudou.com/webapp/ddquwan/guide/goinstallhelper"); 
+/**
+ * 修改BlockUI默认样式 
+ */
+$.extend($.blockUI.defaults, {
+	fadeIn: 500,
+	overlayCSS: {
+		backgroundColor: '#000',
+		opacity: 0.7,
+		cursor: 'normal',
+	},
+	onOverlayClick: function (){
+		$.unblockUI();
+	},
+	css: {
+		width:'80%',
+		maxWidth: '330px',
+		padding: '15px 15px',
+		margin:'0 0 0 -45%',
+		textAlign: 'center',
+		backgroundColor: '#fff',	
+		cursor: 'normal',
+		left: '50%',
+		top: '50%',
+		border: '1px solid #e8e8e8'
+	}
+});
+});
+//-->
+</script>
+</head>
+
+<body>
+
+<div class="pagewidth invitation_card_box">
+<!--顶部导航-->
+  	<div class="header"> <a href="javascript:window.close();" class="hd_back hd_close"><i></i></a>
+    	<h3>扫码分享</h3>
+  	</div>
+    <!--“扫码分享”面板-->
+  	<div class="invitation_card">
+    	<div class="invitation_card_top">
+        	<span>安卓好友记得填写我的邀请码</span>
+        	<em>S10227397</em>
+        </div>
+        <!--这里是缺角的效果-->
+        <div class="invitation_card_con">
+        	<em class="invitation_card_bg_left"></em>
+       		<span></span>
+            <em class="invitation_card_bg_right"></em>
+        </div>
+        <div class="invitation_card_bottom">
+            <!--长按二维码可保存，看看是否有默认的底部滑出保存取消的选择-->
+        	<a href="javascript:void(0)"><img src="/files/qrcode/7/10227397.png" /></a>
+        	<span>扫一扫，一起加入豆豆趣玩</span>
+        	<em>长按二维码可保存</em>
+        </div>
+  	</div>
+</div>
+</body>
+</html>

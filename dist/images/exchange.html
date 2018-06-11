@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="/assets/bb7fcfb5/jquery.min.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.storageapi.min.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.blockUI.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.jsonp-2.4.0.min.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/jquery.base64.js"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/taskhelper.js?v409"></script>
+<script type="text/javascript" src="/themes/default/skins/webapp/js/touch-0.2.14.min_.js"></script>
+<title>兑现</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<link href="/themes/default/skins/webapp/css/common.css?0621" type="text/css" rel="stylesheet">
+<script language="javascript">
+<!--
+$(function(){
+  
+//安装地址
+$.taskHelper.setInstallUrl("http://web.doudou.com/webapp/ddquwan/guide/goinstallhelper"); 
+/**
+ * 修改BlockUI默认样式 
+ */
+$.extend($.blockUI.defaults, {
+	fadeIn: 500,
+	overlayCSS: {
+		backgroundColor: '#000',
+		opacity: 0.7,
+		cursor: 'normal',
+	},
+	onOverlayClick: function (){
+		$.unblockUI();
+	},
+	css: {
+		width:'80%',
+		maxWidth: '330px',
+		padding: '15px 15px',
+		margin:'0 0 0 -45%',
+		textAlign: 'center',
+		backgroundColor: '#fff',	
+		cursor: 'normal',
+		left: '50%',
+		top: '50%',
+		border: '1px solid #e8e8e8'
+	}
+});
+});
+//-->
+</script>
+</head>
+
+<body>
+
+<!---最外边都要包一个pagewidth来限制页面最大宽度-->
+<div class="pagewidth">
+     <!--顶部导航-->
+	 <div class="header"> 
+   		 <a href="/webapp/ddquwan/dashboard/index" class="hd_back"><i></i></a>
+		 <h3>兑现</h3>
+         <a class="hd_right" href="/webapp/ddquwan/user/exchange/record"><span>兑换记录</span><i class="info_renwu_ico info_invitation_ico"></i></a>
+     </div>
+     <!--头部提示说明-->
+     <div class="exchange_prompt">
+     	<i></i><span>兑换金额需大于10.00元，每天可兑现一次</span>
+     </div>
+     
+      <!--兑换金额及确认按钮-->
+      <div class="exchange_box">
+      	<i></i>
+        <p>我的零钱</p>
+        <b>¥10.10</b>
+                <a class="but_yellow_2" href="http://web.doudou.com/webapp/ddquwan/user/exchange/wxpay"><em></em>微信钱包提现</a>      </div>
+
+    <!---弹出---简单弹出固定模板01-金额不足10元时的提醒-->
+  	<div class="remind_total" style="display:none"  >
+    	<div class="remind_total_top">
+     		 <h6>温馨提醒</h6>
+    	</div>
+    	<div class="remind_text">
+    		 <span>兑现金额须大于10元，快去体验任务赚钱。</span>
+   		</div>
+    	<div class="remind_foot">
+    		<!---点击去app体验任务页面---->
+   			<input  class="remind_btn btn_one" name="gotask" value="去赚钱" type="submit">
+    	</div>
+ 	</div>
+    
+<!---黑色浮层---->
+	<div class="z_box" style="display:none" ></div>
+</div>
+<script type="text/javascript">
+function notice(){$('.remind_total,.z_box').show();}
+$('input[name=gotask]').click(function(){
+	location.href="/webapp/ddquwan/task/app";
+});
+</script>
+</body>
+</html>

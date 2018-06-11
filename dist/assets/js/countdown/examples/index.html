@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Countdown</title>
+    <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>-->
+    <script type="text/javascript" src="http://renwukuan.com/assets/js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../dist/jquery.countdown.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+
+    <script type="text/javascript">
+      $(function() {
+        var endDate = "June 7, 2087 15:03:25";
+
+        $('.countdown.simple').countdown({ date: endDate });
+
+        $('.countdown.styled').countdown({
+          date: endDate,
+          render: function(data) {
+              console.log(data)
+            $(this.el).html("<div>" + this.leadingZeros(data.years, 4) + " <span>years</span></div><div>" + this.leadingZeros(data.days, 3) + " <span>days</span></div><div>" + this.leadingZeros(data.hours, 2) + " <span>hrs</span></div><div>" + this.leadingZeros(data.min, 2) + " <span>min</span></div><div>" + this.leadingZeros(data.sec, 2) + " <span>sec</span></div>");
+          }
+        });
+
+        $('.countdown.callback').countdown({
+          date: +(new Date) + 10000,
+          render: function(data) {
+            $(this.el).text(this.leadingZeros(data.sec, 2) + " sec");
+          },
+          onEnd: function() {
+            $(this.el).addClass('ended');
+          }
+        }).on("click", function() {
+          $(this).removeClass('ended').data('countdown').update(+(new Date) + 10000).start();
+        });
+
+        // End time for diff purposes
+        var endTimeDiff = new Date().getTime() + 15000;
+        // This is server's time
+        var timeThere = new Date();
+        // This is client's time (delayed)
+        var timeHere = new Date(timeThere.getTime() - 5434);
+        // Get the difference between client time and server time
+        var diff_ms = timeHere.getTime() - timeThere.getTime();
+        // Get the rounded difference in seconds
+        var diff_s = diff_ms / 1000 | 0;
+        
+        var notice = [];
+        notice.push('Server time: ' + timeThere.toDateString() + ' ' + timeThere.toTimeString());
+        notice.push('Your time: ' + timeHere.toDateString() + ' ' + timeHere.toTimeString());
+        notice.push('Time difference: ' + diff_s + ' seconds (' + diff_ms + ' milliseconds to be precise). Your time is a bit behind.');
+        
+        $('.offset-notice').html(notice.join('<br />'));
+        
+        $('.offset-server .countdown').countdown({
+          date: endTimeDiff,
+          offset: diff_s * 1000,
+          onEnd: function() {
+            $(this.el).addClass('ended');
+          }
+        });
+        
+        $('.offset-client .countdown').countdown({
+          date: endTimeDiff,
+          onEnd: function() {
+            $(this.el).addClass('ended');
+          }
+        });
+
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>COUNTDOWN</h1>
+
+      <h2>Simple text countdown</h2>
+      <div class="countdown simple" data-date="June 7, 2037 15:03:25"></div>
+
+      <h2>Styled output</h2>
+      <div class="countdown styled"></div>
+
+      <h2>Countdown with callback</h2>
+      <p>Click on the green box to reset the counter to 10 sec.</p>
+      <div class="countdown callback"></div>
+      
+      <h2>Countdown with offset</h2>
+      <p class="offset-notice"></p>
+      <div class="offset-server">Countdown according to server time: 
+        <div class="countdown offset"></div>
+      </div>
+      <div class="offset-client">Countdown according to your time: 
+        <div class="countdown offset"></div>
+      </div>
+    </div>
+  </body>
+</html>
