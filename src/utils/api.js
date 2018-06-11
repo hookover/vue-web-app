@@ -59,7 +59,7 @@ export function post(url, params) {
 }
 export function get(url, params) {
   //参数处理
-    if(!params.hasOwnProperty('params')) {
+    if(params instanceof Object && !params.hasOwnProperty('params')) {
         params = {params: params}
     }
     return new Promise((resolve, reject) => {
@@ -113,7 +113,7 @@ export default {
      * 获取码农子账号
      */
     getWorkerSubAccounts (params) {
-        return get('/worker-account-ecommerce/all' + _.stringify(params))
+        return get('/worker-account-ecommerce/all' + JSON.stringify(params))
     },
     /**
      * 删除子账号
@@ -247,7 +247,7 @@ export default {
      * 7: 解除冻结
      */
     getWorkerBill(params) {
-        return get('/worker-bill/all' + _.stringify(params))
+        return get('/worker-bill/all' + JSON.stringify(params))
     },
     /**
      * 获取用户提现记录
@@ -255,7 +255,7 @@ export default {
      * @returns {*}
      */
     getWithdrawal(params) {
-        return get('/worker-withdrawal/all' + _.stringify(params))
+        return get('/worker-withdrawal/all' + JSON.stringify(params))
     },
     /**
      * 提现接口，传入参数提现金额
@@ -427,7 +427,7 @@ export default {
         return post('/profile/change-password', params)
     },
     getAutoMailList(params) {
-        return get('/auto-mail-smtp-account/list' + _.stringify(params))
+        return get('/auto-mail-smtp-account/list' + JSON.stringify(params))
     },
     postAutoMailSmtpAccount(params) {
         return post('/auto-mail-smtp-account/add', params);

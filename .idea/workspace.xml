@@ -2,9 +2,974 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72114392-b246-44df-bceb-3bc25a29d7a3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/BindAccount.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/BindAccount.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/clipboard/.babelrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/clipboard/.banner" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/clipboard/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/clipboard/.github/issue_template.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/clipboard/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/clipboard/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/clipboard/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/clipboard/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/clipboard/contributing.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/clipboard/demo/constructor-node.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/clipboard/demo/constructor-nodelist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/clipboard/demo/constructor-selector.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/clipboard/demo/function-target.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/clipboard/demo/function-text.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/clipboard/demo/target-div.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/clipboard/demo/target-input.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/clipboard/demo/target-textarea.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/clipboard/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/clipboard/package.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/clipboard/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/clipboard/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/clipboard/src/clipboard-action.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/clipboard/src/clipboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/clipboard/test/clipboard-action.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/clipboard/test/clipboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/animate.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/jquery.prompt.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/task_list.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/css/taskct.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/css/font-awesome-ie7.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/less/animated.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/less/bootstrap.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/less/bordered-pulled.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/less/core.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/less/extras.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/less/fixed-width.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/less/font-awesome-ie7.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/less/font-awesome.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/less/icons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/less/larger.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/less/list.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/less/mixins.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/less/path.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/less/rotated-flipped.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/less/screen-reader.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/less/stacked.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/less/variables.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/scss/_animated.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/scss/_bordered-pulled.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/scss/_core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/scss/_fixed-width.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/scss/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/scss/_larger.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/scss/_list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/scss/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/scss/_path.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/scss/_rotated-flipped.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/scss/_screen-reader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/scss/_stacked.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/font-awesome/scss/font-awesome.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/HOT.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/ad1_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/ad1_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/ad1_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/add_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/adlogin_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/back_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/bz-01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/bz-02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/bz-03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/bz-04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/cao_03_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/cc927/cc_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/cc927/cc_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/cc927/cc_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/cc927/cc_04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/cc927/cc_05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/cc927/cc_06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/cc927/cc_07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/cc927/cc_08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/cc927/cc_09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/cc927/cc_10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/cc927/cc_11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/cc927/cc_12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/cc927/cc_13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/cc927/cc_14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/cc927/cc_15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/cc927/cc_16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/cc927/cc_17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj0825/chj-01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj0825/chj-02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj0825/chj-03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj0825/chj-04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj0825/chj-05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj0825/chj-06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj0825/chj-07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj0825/chj-08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj0825/chj-09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj0825/chj-10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj0825/chj-11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj1010/rw-01-.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj1010/rw-01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj1010/rw-02-.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj1010/rw-02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj1010/rw-03-.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj1010/rw-03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj1021/renderCaptcha.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj1021/tx_x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj1021/yhk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj1021/zfb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj108/feed-01-.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj108/feed-01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj108/feed-02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj108/feed-03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj108/feed-04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj108/feed-05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj108/feed-06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj108/feed-07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj108/feed-09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj108/feed-10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj108/feed-11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj513/chj-11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj513/chj-12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj616/ind_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj616/ind_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj616/ind_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj616/ind_04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj616/ind_05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj616/ind_06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj616/ind_07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj923/j-01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj923/j-02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj923/j-03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj923/j-04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/chj923/j-05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/del.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/fx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/gonggao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/help/h_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/help/h_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/help/h_04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/help/h_06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/help/h_09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/help/h_10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/help/h_11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/help/h_12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/help/h_13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/help/h_17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/help/h_18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/help/h_21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/help/h_22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/help/h_23.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/help/i-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/help/i-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/help/i-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/help/i-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/help/i-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/help/i-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/help/i-7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/help/i-8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/homea.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/hto.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/index-bg_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/index-right_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/indexx_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/indexx_06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/indexx_08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/indexx_13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/j-01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/j-02-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/j-02-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/j-03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/j-04-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/j-04-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/j-04-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/j-05-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/j-05-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/j-05-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/j-06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/jd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/jd_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/jd_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/jd_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/jd_06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/jda.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/me.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/mea.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/no-data_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/no_picture.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/ok_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/pull-icon@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/r-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/r-10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/r-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/r-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/r-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/r-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/r-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/r-7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/r-8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/r-9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/renderCaptcha.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/rq_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/rr_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/rr_04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/rw_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/rw_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/rw_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/scrollbar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/selectno_06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/selectok_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/stripes.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/v.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/weixin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/wo_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/wo_05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/wo_10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/wo_11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/wo_12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/wo_14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/wo_18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/wo_19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/wo_21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/wo_22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/wo_25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/wo_25.png.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/wo_27.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/wo_29.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/wo_33.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/wobg_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/img/app/zl_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/.jshintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/angularjs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/basic-plus.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/bower-version-update.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/cors/postmessage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/cors/result.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/css/demo-ie8.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/css/demo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/css/jquery.fileupload-noscript.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/css/jquery.fileupload-ui-noscript.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/css/jquery.fileupload-ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/css/jquery.fileupload.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/img/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/img/progressbar.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/jquery-ui.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/js/cors/jquery.postmessage-transport.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/js/cors/jquery.xdr-transport.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/js/jquery.fileupload-angular.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/js/jquery.fileupload-audio.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/js/jquery.fileupload-image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/js/jquery.fileupload-jquery-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/js/jquery.fileupload-process.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/js/jquery.fileupload-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/js/jquery.fileupload-validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/js/jquery.fileupload-video.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/js/jquery.fileupload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/js/jquery.iframe-transport.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/js/vendor/jquery.ui.widget.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/server/gae-go/app.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/server/gae-go/app/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/server/gae-go/static/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/server/gae-go/static/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/server/gae-python/app.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/server/gae-python/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/server/gae-python/static/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/server/gae-python/static/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/server/php/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/server/php/UploadHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/server/php/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/server/php/files/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/server/php/files/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/server/php/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/test/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/jquery-file-upload/test/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/countdown/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/countdown/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/countdown/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/countdown/examples/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/countdown/examples/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/countdown/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/countdown/src/countdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/countdown/src/jquery-wrapper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/iscroll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/ivtable/.babelrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/ivtable/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/ivtable/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/ivtable/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/ivtable/_config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/ivtable/build/build.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/ivtable/build/dev-client.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/ivtable/build/dev-server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/ivtable/build/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/ivtable/build/webpack.base.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/ivtable/build/webpack.build.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/ivtable/build/webpack.dev.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/ivtable/build/webpack.prod.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/ivtable/config/dev.env.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/ivtable/config/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/ivtable/config/prod.env.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/ivtable/config/test.env.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/ivtable/docs/doc.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/ivtable/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/ivtable/src/components/IVDateinput.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/ivtable/src/components/IVPagination.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/ivtable/src/components/IVRadio.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/ivtable/src/components/IVSelect.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/ivtable/src/components/IVTable.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/ivtable/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/ivtable/static/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/ivtable/stats.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/ivtable/test/e2e/custom-assertions/elementCount.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/ivtable/test/e2e/nightwatch.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/ivtable/test/e2e/runner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/ivtable/test/e2e/specs/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/ivtable/test/unit/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/ivtable/test/unit/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/ivtable/test/unit/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/ivtable/test/unit/specs/Vuetable.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/ivtable/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/jquery-1.11.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/jquery-2.1.4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/jquery.lazyload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/jquery.number.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/jquery.prompt.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/jweixin-1.0.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/lightbox/css/lightbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/lightbox/img/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/lightbox/img/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/lightbox/img/next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/lightbox/img/prev.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/lightbox/js/lightbox-2.6.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/lightbox/js/modernizr.custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/ender.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/ar-dz.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/ar-kw.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/ar-ly.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/ar-ma.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/ar-sa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/ar-tn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/be.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/bn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/bo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/bs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/cv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/de-at.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/dv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/en-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/en-gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/en-ie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/en-nz.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/es-do.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/fo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/fr-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/fy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/gd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/gom-latn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/hi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/hy-am.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/is.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/jv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/ka.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/kk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/kn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/ky.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/lb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/lo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/me.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/mi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/ml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/mr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/ms-my.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/ms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/my.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/ne.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/nl-be.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/nn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/pa-in.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/sd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/se.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/sr-cyrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/ss.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/sw.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/ta.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/te.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/tet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/tl-ph.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/tlh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/tzl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/tzm-latn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/tzm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/ur.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/uz-latn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/uz.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/x-pseudo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/yo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/zh-hk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/locale/zh-tw.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/min/locales.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/min/locales.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/min/moment-with-locales.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/min/moment-with-locales.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/min/moment.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/moment.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/moment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/package.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/create/check-overflow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/create/date-from-array.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/create/from-anything.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/create/from-array.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/create/from-object.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/create/from-string-and-array.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/create/from-string-and-format.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/create/from-string.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/create/local.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/create/parsing-flags.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/create/utc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/create/valid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/duration/abs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/duration/add-subtract.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/duration/as.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/duration/bubble.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/duration/constructor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/duration/create.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/duration/duration.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/duration/get.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/duration/humanize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/duration/iso-string.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/duration/prototype.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/duration/valid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/format/format.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/locale/base-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/locale/calendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/locale/constructor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/locale/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/locale/formats.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/locale/invalid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/locale/lists.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/locale/locale.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/locale/locales.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/locale/ordinal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/locale/pre-post-format.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/locale/prototype.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/locale/relative.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/locale/set.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/moment/add-subtract.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/moment/calendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/moment/clone.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/moment/compare.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/moment/constructor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/moment/creation-data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/moment/diff.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/moment/format.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/moment/from.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/moment/get-set.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/moment/locale.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/moment/min-max.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/moment/moment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/moment/now.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/moment/prototype.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/moment/start-end-of.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/moment/to-type.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/moment/to.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/moment/valid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/parse/regex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/parse/token.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/units/aliases.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/units/constants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/units/day-of-month.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/units/day-of-week.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/units/day-of-year.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/units/hour.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/units/millisecond.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/units/minute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/units/month.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/units/offset.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/units/priorities.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/units/quarter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/units/second.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/units/timestamp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/units/timezone.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/units/units.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/units/week-calendar-utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/units/week-year.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/units/week.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/units/year.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/utils/abs-ceil.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/utils/abs-floor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/utils/abs-round.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/utils/compare-arrays.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/utils/defaults.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/utils/deprecate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/utils/extend.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/utils/has-own-prop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/utils/hooks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/utils/index-of.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/utils/is-array.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/utils/is-date.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/utils/is-function.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/utils/is-number.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/utils/is-object-empty.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/utils/is-object.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/utils/is-undefined.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/utils/keys.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/utils/map.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/utils/some.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/utils/to-int.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/lib/utils/zero-fill.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/ar-dz.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/ar-kw.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/ar-ly.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/ar-ma.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/ar-sa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/ar-tn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/be.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/bn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/bo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/bs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/cv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/de-at.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/dv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/en-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/en-gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/en-ie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/en-nz.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/es-do.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/fo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/fr-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/fy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/gd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/gom-latn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/hi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/hy-am.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/is.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/jv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/ka.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/kk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/kn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/ky.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/lb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/lo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/me.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/mi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/ml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/mr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/ms-my.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/ms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/my.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/ne.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/nl-be.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/nn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/pa-in.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/sd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/se.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/sr-cyrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/ss.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/sw.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/ta.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/te.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/tet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/tl-ph.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/tlh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/tzl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/tzm-latn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/tzm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/ur.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/uz-latn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/uz.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/x-pseudo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/yo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/zh-hk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/locale/zh-tw.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/moment/src/moment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/pages/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/personal_addTaobao.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/personal_feedback.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/personal_msg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/personal_recommend.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/personal_recommendG.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/personal_taskweek.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/swiper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/vue-2/vue.dev.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/vue-2/vue.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/js/wszl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/.eslintignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/.github/CONTRIBUTING_en-us.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/.github/CONTRIBUTING_zh-cn.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/.github/ISSUE_TEMPLATE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/.github/PULL_REQUEST_TEMPLATE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/FAQ.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/build/bin/build-all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/build/bin/build-entry.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/build/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/build/cooking.common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/build/cooking.component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/build/cooking.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/build/cooking.demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/build/release.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/components.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/example/app.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/example/assets/100x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/example/demos.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/example/entry.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/example/index.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/example/nav.config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/example/pages/action-sheet.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/example/pages/badge.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/example/pages/button.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/example/pages/cell-swipe.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/example/pages/cell.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/example/pages/checklist.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/example/pages/datetime-picker.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/example/pages/field.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/example/pages/header.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/example/pages/index-list.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/example/pages/indicator.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/example/pages/infinite-scroll.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/example/pages/lazyload.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/example/pages/message-box.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/example/pages/navbar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/example/pages/palette-button.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/example/pages/picker.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/example/pages/popup.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/example/pages/progress.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/example/pages/pull-down.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/example/pages/pull-up.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/example/pages/radio.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/example/pages/range.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/example/pages/search.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/example/pages/spinner.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/example/pages/swipe.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/example/pages/switch.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/example/pages/tab-container.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/example/pages/tabbar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/example/pages/toast.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/example/route.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/lerna.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/lib/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/lib/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/actionsheet/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/actionsheet/cooking.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/actionsheet/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/actionsheet/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/actionsheet/src/actionsheet.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/badge/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/badge/cooking.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/badge/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/badge/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/badge/src/badge.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/button/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/button/cooking.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/button/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/button/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/button/src/button.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/cell-swipe/cooking.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/cell-swipe/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/cell-swipe/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/cell-swipe/src/cell-swipe.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/cell/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/cell/cooking.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/cell/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/cell/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/cell/src/cell.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/checklist/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/checklist/cooking.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/checklist/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/checklist/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/checklist/src/checklist.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/datetime-picker/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/datetime-picker/cooking.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/datetime-picker/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/datetime-picker/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/datetime-picker/src/datetime-picker.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/field/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/field/cooking.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/field/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/field/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/field/src/field.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/header/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/header/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/header/src/header.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/index-list/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/index-list/cooking.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/index-list/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/index-list/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/index-list/src/index-list.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/index-section/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/index-section/cooking.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/index-section/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/index-section/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/index-section/src/index-section.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/indicator/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/indicator/cooking.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/indicator/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/indicator/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/indicator/src/indicator.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/infinite-scroll/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/infinite-scroll/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/infinite-scroll/src/directive.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/infinite-scroll/src/infinite-scroll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/lazyload/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/lazyload/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/lazyload/src/lazyload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/loadmore/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/loadmore/cooking.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/loadmore/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/loadmore/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/loadmore/src/loadmore.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/message-box/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/message-box/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/message-box/src/message-box.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/message-box/src/message-box.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/navbar/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/navbar/cooking.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/navbar/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/navbar/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/navbar/src/navbar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/palette-button/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/palette-button/cooking.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/palette-button/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/palette-button/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/palette-button/src/palette-button.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/picker/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/picker/cooking.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/picker/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/picker/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/picker/src/draggable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/picker/src/picker-slot.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/picker/src/picker.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/picker/src/translate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/popup/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/popup/cooking.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/popup/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/popup/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/popup/src/popup.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/progress/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/progress/cooking.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/progress/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/progress/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/progress/src/progress.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/radio/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/radio/cooking.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/radio/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/radio/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/radio/src/radio.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/range/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/range/cooking.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/range/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/range/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/range/src/draggable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/range/src/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/search/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/search/cooking.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/search/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/search/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/search/src/search.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/spinner/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/spinner/components.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/spinner/cooking.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/spinner/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/spinner/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/spinner/src/spinner.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/spinner/src/spinner/common.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/spinner/src/spinner/double-bounce.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/spinner/src/spinner/fading-circle.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/spinner/src/spinner/snake.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/spinner/src/spinner/triple-bounce.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/swipe-item/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/swipe-item/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/swipe/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/swipe/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/swipe/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/swipe/src/swipe-item.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/swipe/src/swipe.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/switch/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/switch/cooking.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/switch/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/switch/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/switch/src/switch.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/tab-container-item/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/tab-container-item/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/tab-container-item/src/tab-container-item.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/tab-container/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/tab-container/_index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/tab-container/cooking.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/tab-container/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/tab-container/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/tab-container/src/tab-container.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/tab-item/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/tab-item/cooking.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/tab-item/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/tab-item/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/tab-item/src/tab-item.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/tabbar/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/tabbar/cooking.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/tabbar/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/tabbar/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/tabbar/src/tabbar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/toast/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/toast/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/toast/src/toast.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/packages/toast/src/toast.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/src/assets/font/iconfont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/src/assets/font/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/src/assets/loading-spin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/src/mixins/emitter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/src/style/empty.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/src/style/popup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/src/style/var.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/src/utils/clickoutside.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/src/utils/dom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/src/utils/merge.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/src/utils/popup/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/src/utils/popup/popup-manager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mint-ui/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/number-format.js/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/number-format.js/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/number-format.js/lib/format.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/number-format.js/lib/format.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/number-format.js/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vuex/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/vuex/store.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,57 +980,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Header.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Header.vue">
+      <file leaf-file-name="api.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/utils/api.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BindAccount.vue" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/pages/BindAccount.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="145" column="15" lean-forward="true" selection-start-line="145" selection-start-column="15" selection-end-line="145" selection-end-column="15" />
+            <state relative-caret-position="132">
+              <caret line="105" column="14" selection-start-line="105" selection-start-column="4" selection-end-line="105" selection-end-column="14" />
               <folding>
-                <element signature="n#template#0;n#!!top" />
+                <element signature="e#0#25#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+      <file leaf-file-name="Home.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/Home.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="30" column="8" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="8" />
+            <state relative-caret-position="144">
+              <caret line="77" column="36" selection-start-line="77" selection-start-column="26" selection-end-line="77" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.vue">
+      <file leaf-file-name="store.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/vuex/store.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+            <state relative-caret-position="230">
+              <caret line="149" selection-start-line="149" selection-end-line="149" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main.js">
+      <file leaf-file-name="WorkerSubAccountsDialog.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/WorkerSubAccountsDialog.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="14" column="3" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="3" />
+            <state relative-caret-position="192">
+              <caret line="168" column="35" selection-start-line="168" selection-start-column="35" selection-end-line="168" selection-end-column="35" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="api.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utils/api.js">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -73,9 +1027,27 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>src/styles/theme.less</find>
+      <find>common.js</find>
       <find>ChinaAddressData</find>
       <find>vux</find>
+      <find>style.css</find>
+      <find>index</find>
+      <find>stringify</find>
+      <find>_.stringify</find>
+      <find>updateWorkerSubAccounts</find>
+      <find>loadAccounts</find>
+      <find>getProfile</find>
+      <find>oscwx_2</find>
+      <find>oscwx</find>
+      <find>worker/profile</find>
     </findStrings>
+    <replaceStrings>
+      <replace>JSON.stringify</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src</dir>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -84,6 +1056,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/pages/BindAccount.vue" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/src/App.vue" />
+        <option value="$PROJECT_DIR$/dist/css/app.fedcf2bb378a4a9cb1ee.css" />
+        <option value="$PROJECT_DIR$/src/utils/tool.js" />
+        <option value="$PROJECT_DIR$/src/utils/api.js" />
+        <option value="$PROJECT_DIR$/src/vuex/store.js" />
       </list>
     </option>
   </component>
@@ -100,12 +1078,76 @@
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
+      <path value="$PROJECT_DIR$/dist/assets/clipboard/package.json" />
+      <path value="$PROJECT_DIR$/dist/assets/jquery-file-upload/package.json" />
+      <path value="$PROJECT_DIR$/dist/assets/js/countdown/package.json" />
+      <path value="$PROJECT_DIR$/dist/assets/js/moment/package.json" />
+      <path value="$PROJECT_DIR$/dist/assets/mint-ui/package.json" />
+      <path value="$PROJECT_DIR$/dist/assets/mint-ui/packages/actionsheet/package.json" />
+      <path value="$PROJECT_DIR$/dist/assets/mint-ui/packages/badge/package.json" />
+      <path value="$PROJECT_DIR$/dist/assets/mint-ui/packages/button/package.json" />
+      <path value="$PROJECT_DIR$/dist/assets/mint-ui/packages/cell-swipe/package.json" />
+      <path value="$PROJECT_DIR$/dist/assets/mint-ui/packages/cell/package.json" />
+      <path value="$PROJECT_DIR$/dist/assets/mint-ui/packages/checklist/package.json" />
+      <path value="$PROJECT_DIR$/dist/assets/mint-ui/packages/datetime-picker/package.json" />
+      <path value="$PROJECT_DIR$/dist/assets/mint-ui/packages/field/package.json" />
+      <path value="$PROJECT_DIR$/dist/assets/mint-ui/packages/index-list/package.json" />
+      <path value="$PROJECT_DIR$/dist/assets/mint-ui/packages/index-section/package.json" />
+      <path value="$PROJECT_DIR$/dist/assets/mint-ui/packages/indicator/package.json" />
+      <path value="$PROJECT_DIR$/dist/assets/mint-ui/packages/loadmore/package.json" />
+      <path value="$PROJECT_DIR$/dist/assets/mint-ui/packages/navbar/package.json" />
+      <path value="$PROJECT_DIR$/dist/assets/mint-ui/packages/palette-button/package.json" />
+      <path value="$PROJECT_DIR$/dist/assets/mint-ui/packages/picker/package.json" />
+      <path value="$PROJECT_DIR$/dist/assets/mint-ui/packages/popup/package.json" />
+      <path value="$PROJECT_DIR$/dist/assets/mint-ui/packages/progress/package.json" />
+      <path value="$PROJECT_DIR$/dist/assets/mint-ui/packages/radio/package.json" />
+      <path value="$PROJECT_DIR$/dist/assets/mint-ui/packages/range/package.json" />
+      <path value="$PROJECT_DIR$/dist/assets/mint-ui/packages/search/package.json" />
+      <path value="$PROJECT_DIR$/dist/assets/mint-ui/packages/spinner/package.json" />
+      <path value="$PROJECT_DIR$/dist/assets/mint-ui/packages/swipe/package.json" />
+      <path value="$PROJECT_DIR$/dist/assets/mint-ui/packages/switch/package.json" />
+      <path value="$PROJECT_DIR$/dist/assets/mint-ui/packages/tab-container/package.json" />
+      <path value="$PROJECT_DIR$/dist/assets/mint-ui/packages/tab-item/package.json" />
+      <path value="$PROJECT_DIR$/dist/assets/mint-ui/packages/tabbar/package.json" />
+      <path value="$PROJECT_DIR$/dist/assets/number-format.js/package.json" />
       <path value="$PROJECT_DIR$/package.json" />
+      <path value="$PROJECT_DIR$/static/assets/clipboard/package.json" />
+      <path value="$PROJECT_DIR$/static/assets/jquery-file-upload/package.json" />
+      <path value="$PROJECT_DIR$/static/assets/js/countdown/package.json" />
+      <path value="$PROJECT_DIR$/static/assets/js/moment/package.json" />
+      <path value="$PROJECT_DIR$/static/assets/mint-ui/package.json" />
+      <path value="$PROJECT_DIR$/static/assets/mint-ui/packages/actionsheet/package.json" />
+      <path value="$PROJECT_DIR$/static/assets/mint-ui/packages/badge/package.json" />
+      <path value="$PROJECT_DIR$/static/assets/mint-ui/packages/button/package.json" />
+      <path value="$PROJECT_DIR$/static/assets/mint-ui/packages/cell-swipe/package.json" />
+      <path value="$PROJECT_DIR$/static/assets/mint-ui/packages/cell/package.json" />
+      <path value="$PROJECT_DIR$/static/assets/mint-ui/packages/checklist/package.json" />
+      <path value="$PROJECT_DIR$/static/assets/mint-ui/packages/datetime-picker/package.json" />
+      <path value="$PROJECT_DIR$/static/assets/mint-ui/packages/field/package.json" />
+      <path value="$PROJECT_DIR$/static/assets/mint-ui/packages/index-list/package.json" />
+      <path value="$PROJECT_DIR$/static/assets/mint-ui/packages/index-section/package.json" />
+      <path value="$PROJECT_DIR$/static/assets/mint-ui/packages/indicator/package.json" />
+      <path value="$PROJECT_DIR$/static/assets/mint-ui/packages/loadmore/package.json" />
+      <path value="$PROJECT_DIR$/static/assets/mint-ui/packages/navbar/package.json" />
+      <path value="$PROJECT_DIR$/static/assets/mint-ui/packages/palette-button/package.json" />
+      <path value="$PROJECT_DIR$/static/assets/mint-ui/packages/picker/package.json" />
+      <path value="$PROJECT_DIR$/static/assets/mint-ui/packages/popup/package.json" />
+      <path value="$PROJECT_DIR$/static/assets/mint-ui/packages/progress/package.json" />
+      <path value="$PROJECT_DIR$/static/assets/mint-ui/packages/radio/package.json" />
+      <path value="$PROJECT_DIR$/static/assets/mint-ui/packages/range/package.json" />
+      <path value="$PROJECT_DIR$/static/assets/mint-ui/packages/search/package.json" />
+      <path value="$PROJECT_DIR$/static/assets/mint-ui/packages/spinner/package.json" />
+      <path value="$PROJECT_DIR$/static/assets/mint-ui/packages/swipe/package.json" />
+      <path value="$PROJECT_DIR$/static/assets/mint-ui/packages/switch/package.json" />
+      <path value="$PROJECT_DIR$/static/assets/mint-ui/packages/tab-container/package.json" />
+      <path value="$PROJECT_DIR$/static/assets/mint-ui/packages/tab-item/package.json" />
+      <path value="$PROJECT_DIR$/static/assets/mint-ui/packages/tabbar/package.json" />
+      <path value="$PROJECT_DIR$/static/assets/number-format.js/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="1280" />
-    <option name="y" value="173" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1343" />
+    <option name="y" value="130" />
     <option name="width" value="1446" />
     <option name="height" value="907" />
   </component>
@@ -125,19 +1167,18 @@
             <path>
               <item name="vue-web-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="vue-web-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vue-web-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="vue-web-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vue-web-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="vue-web-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="router" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -151,11 +1192,12 @@
     <property name="nodejs_interpreter_path" value="node" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/src/assets" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets/image" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/assets" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -186,16 +1228,15 @@
       <option name="presentableId" value="Default" />
       <updated>1497170288451</updated>
       <workItem from="1497170289756" duration="4729000" />
-      <workItem from="1528720547240" duration="318000" />
+      <workItem from="1528720547240" duration="2762000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5047000" />
+    <option name="totallyTimeSpent" value="7491000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1280" y="173" width="1446" height="907" extended-state="0" />
-    <editor active="true" />
+    <frame x="1343" y="130" width="1446" height="907" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32946634" />
@@ -203,10 +1244,11 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.34814814" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31980056" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -216,7 +1258,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +1302,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/HelloFromVux.vue" />
+    <entry file="file://$PROJECT_DIR$/src/components/MySettings.vue" />
+    <entry file="file://$PROJECT_DIR$/src/components/NewsList.vue" />
+    <entry file="file://$PROJECT_DIR$/src/components/QuestionList.vue" />
+    <entry file="file://$PROJECT_DIR$/src/components/BlogList.vue" />
+    <entry file="file://$PROJECT_DIR$/src/components/NewsDetail.vue" />
+    <entry file="file://$PROJECT_DIR$/src/pages/BindAccount.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="146" column="64" selection-start-line="146" selection-start-column="64" selection-end-line="146" selection-end-column="64" />
+          <folding>
+            <element signature="n#template#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Header.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -268,42 +1325,133 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/HelloFromVux.vue" />
-    <entry file="file://$PROJECT_DIR$/src/components/MySettings.vue" />
-    <entry file="file://$PROJECT_DIR$/src/components/NewsList.vue" />
-    <entry file="file://$PROJECT_DIR$/src/components/QuestionList.vue" />
-    <entry file="file://$PROJECT_DIR$/src/App.vue">
+    <entry file="file://$PROJECT_DIR$/node_modules/vux/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="29" column="25" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task/public/js/pages/change_phone.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task/public/js/vue-2/vue.dev.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task/public/assets/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-741" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task/public/assets/css/task_list.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/app.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+          <caret line="2" column="459" selection-start-line="2" selection-start-column="459" selection-end-line="2" selection-end-column="459" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
+        <state relative-caret-position="-336">
           <caret line="14" column="3" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BlogList.vue" />
-    <entry file="file://$PROJECT_DIR$/src/utils/api.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/NewsDetail.vue" />
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="30" column="8" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="8" />
+        <state relative-caret-position="99">
+          <caret line="56" column="19" lean-forward="true" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
+          <folding>
+            <element signature="e#253#282#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/BindAccount.vue">
+    <entry file="file://$PROJECT_DIR$/build/webpack.prod.conf.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="145" column="15" lean-forward="true" selection-start-line="145" selection-start-column="15" selection-end-line="145" selection-end-column="15" />
+        <state relative-caret-position="-542">
+          <caret line="39" column="26" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/assets/js/dist/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/css/app.fedcf2bb378a4a9cb1ee.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret column="666" selection-start-column="666" selection-end-column="666" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/tool.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="60" column="16" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
           <folding>
-            <element signature="n#template#0;n#!!top" />
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/WorkerSubAccountsDialog.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="168" column="35" selection-start-line="168" selection-start-column="35" selection-end-line="168" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="105" column="14" selection-start-line="105" selection-start-column="4" selection-end-line="105" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3320" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-122">
+          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/Home.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="77" column="36" selection-start-line="77" selection-start-column="26" selection-end-line="77" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vuex/store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="149" selection-start-line="149" selection-end-line="149" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>

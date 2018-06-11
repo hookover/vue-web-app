@@ -1,0 +1,5 @@
+/*弹出层插件样式开始*/
+.Prompt_floatBoxBg{display:none;width:100%;height:100%;background:#000;position:fixed !important;/*ie7 ff*/position:absolute;top:0;left:0;filter:alpha(opacity=0);opacity:0; z-index:999;}
+.Prompt_floatBox{z-index:1000;display:block;position:absolute;padding:6px;text-align:center;top:404.5px;left:0;height:auto;z-index:10000;word-wrap:break-word;-webkit-box-shadow:rgba(0,0,0,0.498039) 0px 0px 15px;box-shadow:rgba(0,0,0,0.498039) 0px 0px 15px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-right-radius:6px;border-bottom-left-radius:6px;opacity:1;background:rgba(0,0,0,.7);}
+.Prompt_floatBox .content{padding: 15px 0px;margin: 10px; color: #fff;font-size: 14px;overflow-x:hidden;overflow-y: auto;}
+/*弹出层插件样式结束*/

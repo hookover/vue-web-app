@@ -157,7 +157,7 @@ store.registerModule('com', {
                         state.profile_is_loading = false;
                     },
                     p_obj => {
-                        state.profile_is_loading = false;
+                        state.profile_is_loading = true;
                     }
                 )
             }
