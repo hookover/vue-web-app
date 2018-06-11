@@ -143,8 +143,8 @@
         PopupPicker,
         Popup,
         Picker,
-        ChinaAddressV4Data as ChinaAddressData,
-        TransferDomDirective as TransferDom
+        ChinaAddressV3Data as ChinaAddressData,
+        // ChinaAddressV4Data as ChinaAddressData, /*更新后发现它没了？？？*/
     } from 'vux'
     import AppHeader from '../components/Header.vue';
     import VueCoreImageUpload from 'vue-core-image-upload'
