@@ -1,0 +1,11 @@
+{
+    "name": "chenjiang/smsclient",
+    "description": "短信发送的客户端 http://gitlab.liebaopay.com:9090/INA_financial/sms_server/wikis/api",
+    "authors": [
+        {
+            "name": "ChenJiang",
+            "email": "chenjiang1@cmcm.com"
+        }
+    ],
+    "require": {}
+}
