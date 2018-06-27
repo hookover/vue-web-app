@@ -8,7 +8,7 @@
     src/vuex/store.js   状态管理
 
 ## 演示地址
-[http://hookover.github.io/vue-web-ap](http://hookover.github.io/vue-web-app){:target="_blank"}
+[http://hookover.github.io/vue-web-app](http://hookover.github.io/vue-web-app)
 
 ## 备注
     如果图片不显示，是连接地址的问题，看console log解决
