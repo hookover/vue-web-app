@@ -6,7 +6,10 @@
     src/router          路由文件
     src/utils/api.js    所有api接口
     src/vuex/store.js   状态管理
-    
+
+## 演示地址
+http://hookover.github.io/vue-web-app
+
 ## 备注
     如果图片不显示，是连接地址的问题，看console log解决
     api返回的数据只能靠猜啦
